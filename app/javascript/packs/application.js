@@ -10,6 +10,10 @@ import "channels"
 import 'bootstrap';
 import "../stylesheets/application";
 
+require('jquery')
+require("packs/custom")
+require("trix")
+require("@rails/actiontext")
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()

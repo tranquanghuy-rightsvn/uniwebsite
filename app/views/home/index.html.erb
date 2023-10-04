@@ -1,0 +1,9 @@
+<div class="container">
+  <p> Các website bạn đang quản lý </p>
+
+  <ul>
+    <% @websites.map do |website| %>
+      <%= link_to website.name, website_products_path(website_id: website.id) %>
+    <% end %>
+  </ul>
+</div>
