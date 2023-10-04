@@ -82,7 +82,7 @@ class Product::CreateService
     <div class=\"box-news\">"
 
 
-    resource.website.products.first(21).each_with_index do |product, index|
+    resource.website.products.last(19).reverse.each_with_index do |product, index|
       id = index + 1
 
       content_index += "<div class=\"box-shadow news-" + id.to_s + "\"><div class=\"image-news\"><img src=\"" + (product.image ? "./images/#{product.id}/#{product.image}" : "#") + "\"><a href=\"" + product.url.to_s + "\"><div class=\"title-news\"><h6>" + product.title + "</h6></div></a></div></div>"
@@ -97,5 +97,7 @@ class Product::CreateService
 </html>"
 
     File.write("projects/chaos_news/index.html", content_index)
+
+    system('cd projects/chaos_news && git add . && git commit --amend --no-edit && git push origin master -f')
   end
 end
