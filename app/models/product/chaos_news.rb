@@ -3,15 +3,13 @@ require_relative '../../services/chaos_news/create_service'
 require_relative '../../services/chaos_news/update_service'
 require_relative '../../services/chaos_news/delete_service'
 
-
 class Product::ChaosNews  < Product
   mount_uploader :image, ProductChaosNewsUploader
   has_rich_text :content
 
-  after_create :generate_data
-  after_update :update_data
-  after_destroy :delete_data
-
+  after_create_commit :generate_data
+  after_update_commit :update_data
+  after_destroy_commit :delete_data
 
   validate :image_height_greater_than_or_equal_to_width
 
@@ -21,11 +19,11 @@ class Product::ChaosNews  < Product
     ChaosNews::CreateService.new(self).perform
   end
 
-  def generate_data
+  def update_data
     ChaosNews::UpdateService.new(self).perform
   end
 
-  def generate_data
+  def delete_data
     ChaosNews::DeleteService.new(self).perform
   end
 

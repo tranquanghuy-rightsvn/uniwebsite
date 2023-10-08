@@ -69,6 +69,7 @@ ActiveRecord::Schema.define(version: 2023_10_03_140032) do
     t.bigint "website_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "type", null: false
     t.index ["category_id"], name: "index_products_on_category_id"
     t.index ["user_id"], name: "index_products_on_user_id"
     t.index ["website_id"], name: "index_products_on_website_id"

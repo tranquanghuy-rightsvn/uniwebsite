@@ -16,7 +16,8 @@ gem 'carrierwave'
 gem 'figaro'
 gem 'aws-sdk-s3'
 gem 'rack-cors', :require => 'rack/cors'
-gem "fog-aws"
+gem 'fog-aws'
+gem 'nokogiri'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

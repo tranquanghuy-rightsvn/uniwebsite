@@ -16,7 +16,8 @@ function convertTitle(title) {
 }
 
 document.addEventListener("turbolinks:load", () => {
-  $("input#product_chaos_news_title").on('input', function() {
-    $('input#product_chaos_news_url').val(convertTitle($('input#product_chaos_news_title').val()) + ".html")
+  $("input#product_websitegiare_title").on('input', function() {
+    $('#url-display-field').val(convertTitle($('input#product_websitegiare_title').val()) + ".html")
+    $('#url-hidden-field').val(convertTitle($('input#product_websitegiare_title').val()) + ".html")
   });
 });

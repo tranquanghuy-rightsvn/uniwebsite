@@ -10,7 +10,7 @@ user_2 = User.create! email: "quanghuy@gmail.com", password: "123123", role: 4
 website = Website.create! name: "Chaos news", brief: "chaos_news", user_id: user_2.id
 UserWebsiteRole.create! user_id: user_2.id, website_id: website.id, role: 1
 
-categories = ["Thể thao", "Giải trí", "Pháp luật", "Giới trẻ", "Thế giới", "Duc lịch"]
+categories = ["Thể thao", "Giải trí", "Pháp luật", "Giới trẻ", "Thế giới", "Du lịch"]
 categories.each do |cate|
   Category.create! website_id: website.id, name: cate
 end
