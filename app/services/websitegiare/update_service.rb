@@ -162,6 +162,6 @@ class Product::UpdateService
 
     File.open("projects/websitegiare/" + resource.url, 'w') { |file| file.write(content_post) }
 
-    # system('cd projects/websitegiare && git add . && git commit --amend --no-edit && git push origin master -f')
+    system('cd projects/websitegiare && git add . && git commit --amend --no-edit && git push origin master -f')
   end
 end

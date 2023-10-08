@@ -53,8 +53,10 @@ class Product::CreateService
             <h1>"+ resource.title + "</h1>
 
             <div class=\"content\">
-              <div class=\"description\"><p>" + resource.description + "</p></div>" + resource.content.body.to_s.gsub(/<action-text-attachment[^>]*>[^<]*<\/action-text-attachment>/, '') +
-            "</div>
+              <div class=\"description\"><p>" + resource.description + "</p></div> <div " +
+               (resource.content_copied ? "class=\"content-copied\"" : "" ) +
+               ">" + resource.content.body.to_s.gsub(/<action-text-attachment[^>]*>[^<]*<\/action-text-attachment>/, '') +
+            "</div></div>
           </div>
         </div>
 
@@ -254,6 +256,6 @@ class Product::CreateService
 
     File.write('projects/websitegiare/sitemap.xml', doc_sitemap.to_xml)
 
-    # system('cd projects/websitegiare && git add . && git commit --amend --no-edit && git push origin master -f')
+    system('cd projects/websitegiare && git add . && git commit --amend --no-edit && git push origin master -f')
   end
 end
