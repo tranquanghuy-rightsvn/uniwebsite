@@ -12,6 +12,6 @@ class Product::DeleteService
       File.delete(file_path)
     end
 
-    # system('cd projects/websitegiare && git add . && git commit --amend --no-edit && git push origin master -f')
+    system('cd projects/websitegiare && git add . && git commit --amend --no-edit && git push origin master -f')
   end
 end

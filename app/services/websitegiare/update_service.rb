@@ -22,6 +22,12 @@ class Product::UpdateService
         <title>" + resource.title + "</title>
         <meta content=\"width=device-width, initial-scale=1.0\" name=\"viewport\">
         <meta content=\"" + resource.description + "\" name=\"description\">
+        <meta name=\"robots\" content=\"index,follow\">
+        <meta http-equiv=\"Content-Language\" content=\"vi\">
+        <meta name=\"copyright\" content=\"Copyright © 2023 by Websitegiare.co\">
+        <meta name=\"abstract\" content=\"Websitegiare.co Website thiết kế website giá rẻ số 1 Việt Nam\">
+        <meta name=\"distribution\" content=\"Global\">
+        <meta name=\"author\" content=\"Websitegiare.co\">
         <link rel=\"icon\" type=\"image/x-icon\" href=\"./img/favicon.png\">
 
         <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
@@ -53,8 +59,10 @@ class Product::UpdateService
             <h1>"+ resource.title + "</h1>
 
             <div class=\"content\">
-              <div class=\"description\"><p>" + resource.description + "</p></div>" + resource.content.body.to_s.gsub(/<action-text-attachment[^>]*>[^<]*<\/action-text-attachment>/, '') +
-            "</div>
+              <div " +
+               (resource.content_copied ? "class=\"content-copied\"" : "" ) +
+               ">"  + resource.content.body.to_s.gsub(/<action-text-attachment[^>]*>[^<]*<\/action-text-attachment>/, '') +
+            "</div></div>
           </div>
         </div>
 
@@ -162,6 +170,6 @@ class Product::UpdateService
 
     File.open("projects/websitegiare/" + resource.url, 'w') { |file| file.write(content_post) }
 
-    # system('cd projects/websitegiare && git add . && git commit --amend --no-edit && git push origin master -f')
+    system('cd projects/websitegiare && git add . && git commit --amend --no-edit && git push origin master -f')
   end
 end

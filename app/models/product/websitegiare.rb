@@ -4,8 +4,12 @@ require_relative '../../services/websitegiare/update_service'
 require_relative '../../services/websitegiare/delete_service'
 
 class Product::Websitegiare < Product
+  include EncodeContent
+
   mount_uploader :image, ProductWebsitegiareUploader
   has_rich_text :content
+
+  before_save :encode_content, if: :content_copied?
 
   after_create_commit :generate_data
   after_update_commit :update_data
@@ -35,5 +39,9 @@ class Product::Websitegiare < Product
     if image? && image.height < image.width
       errors.add(:image, "Chiều cao ảnh phải lớn hơn hoặc bằng chiều rộng.")
     end
+  end
+
+  def content_copied?
+    self.content_copied
   end
 end

@@ -28,7 +28,7 @@ class ProductsController < ApplicationController
   private
 
   def product_params
-    params.require("product_#{@brief}".to_sym).permit :title, :description, :content, :image, :url
+    params.require("product_#{@brief}".to_sym).permit :title, :description, :content, :image, :url, :content_copied
   end
 
   def check_manage_website

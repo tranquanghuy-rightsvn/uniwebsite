@@ -39,6 +39,11 @@
     </div>
 
     <div class="form-group">
+      <%= form.check_box :content_copied %>
+      <%= form.label :content_copied, "Sao chép nội dung từ nguồn khác?" %>
+    </div>
+
+    <div class="form-group">
       <%= form.label :image %>
       <%= form.file_field :image, id: "inputImageProduct", class: "form-control" %>
 
