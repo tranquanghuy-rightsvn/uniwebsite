@@ -11,7 +11,7 @@ class Product::ChaosNews  < Product
   after_update_commit :update_data
   after_destroy_commit :delete_data
 
-  validate :image_height_greater_than_or_equal_to_width
+  # validate :image_height_greater_than_or_equal_to_width
 
   private
 
