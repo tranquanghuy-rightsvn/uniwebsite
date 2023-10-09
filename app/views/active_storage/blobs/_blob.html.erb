@@ -1,6 +1,6 @@
 <figure class="attachment attachment--<%= blob.representable? ? "preview" : "file" %> attachment--<%= blob.filename.extension %>">
   <% if blob.representable? %>
-    <img class="post-actiontext-image" src="https://<%= ENV['AWS_BUCKET'] %>.s3-<%= ENV['AWS_REGION'] %>.amazonaws.com/<%= blob.key %>" />
+    <img class="post-actiontext-image" src="https://<%= ENV['AWS_BUCKET'] %>.s3-<%= ENV['AWS_REGION'] %>.amazonaws.com/<%= blob.key %>" alt="<%= @product.website.domain_website %> <%= @product.title %>" />
   <% end %>
 
   <figcaption class="attachment__caption">
