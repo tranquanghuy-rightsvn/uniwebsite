@@ -25,10 +25,10 @@ class Product::CreateService
         <meta name=\"robots\" content=\"index,follow\">
         <meta http-equiv=\"Content-Language\" content=\"vi\">
         <meta name=\"copyright\" content=\"Copyright © 2023 by Websitegiare.co\">
-        <meta name=\"abstract\" content=\"Websitegiare.co Website thiết kế website giá rẻ số 1 Việt Nam\">
+        <meta content=\"" + resource.description + "\" name=\"abstract\">
         <meta name=\"distribution\" content=\"Global\">
         <meta name=\"author\" content=\"Websitegiare.co\">
-        <link rel=\"icon\" type=\"image/x-icon\" href=\"./img/favicon.png\">
+        <link rel=\"icon\" type=\"image/x-icon\" href=\"./img/favicon.ico\">
 
         <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
         <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
@@ -40,6 +40,37 @@ class Product::CreateService
         <link href=\"css/bootstrap.min.css\" rel=\"stylesheet\">
 
         <link href=\"css/style.css\" rel=\"stylesheet\">
+        <script type=\"application/ld+json\">
+          {
+            \"@context\": \"http://schema.org\",
+            \"@type\": \"Article\",
+            \"headline\": \"" + resource.title + "\",
+            \"dateCreated\": \"" + resource.formated_time.to_s + "\",
+            \"datePublished\": \"" + resource.formated_time.to_s + "\",
+            \"dateModified\": \"" + resource.formated_time.to_s + "\",
+            \"author\": {
+              \"@type\": \"Person\",
+              \"name\": \"website giá rẻ\"
+            },
+            \"publisher\": {
+              \"@type\": \"Organization\",
+              \"name\": \"Websitegiare.co\"
+            },
+            \"description\": \"" + resource.description + "\",
+            \"image\": #{resource.content.embeds.map{|e| e.url }},
+            \"url\": \"https://www.websitegiare.co/" + resource.url + "\",
+            \"keywords\": #{resource.keywords},
+            \"logo\": {
+              \"@type\": \"ImageObject\",
+              \"url\": \"https://www.websitegiare.co/" + resource.image.url.split("/")[-3..-1].join("/") + "\"
+            },
+            \"mainEntityOfPage\": {
+              \"@type\": \"WebPage\",
+              \"url\": \"https://www.websitegiare.co/" + resource.url + "\",
+              \"@id\": \"https://www.websitegiare.co/" + resource.url + "\"
+            }
+          }
+        </script>
       </head>
 
       <body>
@@ -189,8 +220,8 @@ class Product::CreateService
 
     children = div_media.children
 
-    if children.length >= 21
-      element_to_remove = children[20]
+    if children.reject{|element| element.blank?}.length >= 21
+      element_to_remove = children.reject{|element| element.blank?}[20]
 
       element_to_remove.remove
     end
@@ -224,18 +255,18 @@ class Product::CreateService
     div_sitemap_media = doc_sitemap_media.at_css('urlset')
 
     div_sitemap_media.inner_html = "<url>
-                    <loc>https://websitegiare.co/" + resource.url + "</loc>
+                    <loc>https://www.websitegiare.co/" + resource.url + "</loc>
                     <changefreq>yearly</changefreq>
                     <priority>0.9</priority>
                   </url" + div_sitemap_media.inner_html
 
-    children = div_sitemap_media.children
+    # children = div_sitemap_media.children
 
-    if children.length >= 21
-      element_to_remove = children[20]
+    # if children.reject{|element| element.blank?}.length >= 21
+    #   element_to_remove = children.reject{|element| element.blank?}[20]
 
-      element_to_remove.remove
-    end
+    #   element_to_remove.remove
+    # end
 
     File.write('projects/websitegiare/sitemaps/media.xml', doc_sitemap_media)
 
@@ -245,7 +276,7 @@ class Product::CreateService
       doc_sitemap_store = Nokogiri::XML(File.read('projects/websitegiare/sitemaps/media-luu-tru.xml'))
       div_sitemap_store = doc_sitemap_store.at_css('urlset')
       div_sitemap_store.inner_html= "<url>
-                    <loc>https://websitegiare.co/" + resource.url + "</loc>
+                    <loc>https://www.websitegiare.co/" + resource.url + "</loc>
                     <changefreq>yearly</changefreq>
                     <priority>0.6</priority>
                   </url" + div_sitemap_store.inner_html
@@ -255,13 +286,13 @@ class Product::CreateService
 
     #sửa sitemap.xml
 
-    doc_sitemap = Nokogiri::XML(File.read('projects/websitegiare/sitemap.xml'))
+    doc_sitemap = Nokogiri::XML(File.read('projects/websitegiare/sitemap-index.xml'))
     div_sitemap = doc_sitemap.css('sitemap')
     div_sitemap[0].at('lastmod').content = Time.current.strftime('%Y-%m-%dT%H:%M:%S%:z')
     div_sitemap[1].at('lastmod').content = Time.current.strftime('%Y-%m-%dT%H:%M:%S%:z')
 
-    File.write('projects/websitegiare/sitemap.xml', doc_sitemap.to_xml)
+    File.write('projects/websitegiare/sitemap-index.xml', doc_sitemap.to_xml)
 
-    system('cd projects/websitegiare && git add . && git commit --amend --no-edit && git push origin master -f')
+    system('cd projects/websitegiare && git add . && git commit -m "New commit" && git push origin master -f')
   end
 end

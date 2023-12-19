@@ -25,10 +25,10 @@ class Product::UpdateService
         <meta name=\"robots\" content=\"index,follow\">
         <meta http-equiv=\"Content-Language\" content=\"vi\">
         <meta name=\"copyright\" content=\"Copyright © 2023 by Websitegiare.co\">
-        <meta name=\"abstract\" content=\"Websitegiare.co Website thiết kế website giá rẻ số 1 Việt Nam\">
+        <meta content=\"" + resource.description + "\" name=\"abstract\">
         <meta name=\"distribution\" content=\"Global\">
         <meta name=\"author\" content=\"Websitegiare.co\">
-        <link rel=\"icon\" type=\"image/x-icon\" href=\"./img/favicon.png\">
+        <link rel=\"icon\" type=\"image/x-icon\" href=\"./img/favicon.ico\">
 
         <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
         <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
@@ -40,6 +40,37 @@ class Product::UpdateService
         <link href=\"css/bootstrap.min.css\" rel=\"stylesheet\">
 
         <link href=\"css/style.css\" rel=\"stylesheet\">
+        <script type=\"application/ld+json\">
+          {
+            \"@context\": \"http://schema.org\",
+            \"@type\": \"Article\",
+            \"headline\": \"" + resource.title + "\",
+            \"dateCreated\": \"" + resource.formated_time.to_s + "\",
+            \"datePublished\": \"" + resource.formated_time.to_s + "\",
+            \"dateModified\": \"" + resource.formated_time.to_s + "\",
+            \"author\": {
+              \"@type\": \"Person\",
+              \"name\": \"website giá rẻ\"
+            },
+            \"publisher\": {
+              \"@type\": \"Organization\",
+              \"name\": \"Websitegiare.co\"
+            },
+            \"description\": \"" + resource.description + "\",
+            \"image\": #{resource.content.embeds.map{|e| e.url }},
+            \"url\": \"https://www.websitegiare.co/" + resource.url + "\",
+            \"keywords\": #{JSON.parse(resource.keywords)},
+            \"logo\": {
+              \"@type\": \"ImageObject\",
+              \"url\": \"https://www.websitegiare.co/" + resource.image.url.split("/")[-3..-1].join("/") + "\"
+            },
+            \"mainEntityOfPage\": {
+              \"@type\": \"WebPage\",
+              \"url\": \"https://www.websitegiare.co/" + resource.url + "\",
+              \"@id\": \"https://www.websitegiare.co/" + resource.url + "\"
+            }
+          }
+        </script>
       </head>
 
       <body>
@@ -170,6 +201,6 @@ class Product::UpdateService
 
     File.open("projects/websitegiare/" + resource.url, 'w') { |file| file.write(content_post) }
 
-    system('cd projects/websitegiare && git add . && git commit --amend --no-edit && git push origin master -f')
+    system('cd projects/websitegiare && git add . && git commit -m "New commit" && git push origin master -f')
   end
 end
