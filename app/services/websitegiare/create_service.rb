@@ -204,7 +204,8 @@ class Product::CreateService
     File.write(absolute_path, content_post)
 
     # Sửa media
-    doc_media = Nokogiri::HTML(File.read('projects/websitegiare/media.html'))
+    media_path = Rails.root.join('projects', 'websitegiare', 'media.html')
+    doc_media = Nokogiri::HTML(File.read(media_path))
     div_media = doc_media.at_css('#render-media')
 
     resource_img= resource.image.url.split("/")[-3..-1].join("/")
@@ -236,8 +237,9 @@ class Product::CreateService
     # Sửa luu tru
     if Product::Websitegiare.count > 20
       resource_21 = Product::Websitegiare.order(id: :desc).offset(20).limit(1).first
+      saver_media_path = Rails.root.join('projects', 'websitegiare', 'media-luu-tru.html')
 
-      doc_store = Nokogiri::HTML(File.read('projects/websitegiare/media-luu-tru.html'))
+      doc_store = Nokogiri::HTML(File.read(saver_media_path))
       div_store = doc_store.at_css('#render-store')
       div_store.inner_html = "<div class=\"col-lg-6 col-md-12\">
                                 <div class=\"box-store\">
@@ -252,13 +254,12 @@ class Product::CreateService
                               </div>" + div_store.inner_html
 
       # File.open('projects/websitegiare/media-luu-tru.html', 'w') { |file| file.write(doc_store.to_html) }
-      saver_media_path = Rails.root.join('projects', 'websitegiare', 'media-luu-tru.html')
       File.write(saver_media_path, doc_store.to_html)
     end
 
     # Sửa sitemap/media
-
-    doc_sitemap_media = Nokogiri::XML(File.read('projects/websitegiare/sitemaps/media.xml'))
+    media_xml_path = Rails.root.join('projects', 'websitegiare', 'sitemaps', 'media.xml')
+    doc_sitemap_media = Nokogiri::XML(File.read(media_xml_path))
     div_sitemap_media = doc_sitemap_media.at_css('urlset')
 
     div_sitemap_media.inner_html = "<url>
@@ -275,13 +276,13 @@ class Product::CreateService
     #   element_to_remove.remove
     # end
 
-    media_xml_path = Rails.root.join('projects', 'websitegiare', 'sitemaps', 'media.xml')
     File.write(media_xml_path, doc_sitemap_media)
 
 
     # Sửa sitemaps/kho-luu-tru
     if resource_21
-      doc_sitemap_store = Nokogiri::XML(File.read('projects/websitegiare/sitemaps/media-luu-tru.xml'))
+      doc_sitemap_store_path = Rails.root.join('projects', 'websitegiare', 'sitemaps', 'media-luu-tru.xml')
+      doc_sitemap_store = Nokogiri::XML(File.read(doc_sitemap_store_path))
       div_sitemap_store = doc_sitemap_store.at_css('urlset')
       div_sitemap_store.inner_html= "<url>
                     <loc>https://www.websitegiare.co/" + resource.url + "</loc>
@@ -289,18 +290,17 @@ class Product::CreateService
                     <priority>0.6</priority>
                   </url" + div_sitemap_store.inner_html
 
-      doc_sitemap_store_path = Rails.root.join('projects', 'websitegiare', 'sitemaps', 'media-luu-tru.xml')
       File.write(doc_sitemap_store_path, doc_sitemap_store)
     end
 
     #sửa sitemap.xml
+    doc_sitemap_index_path = Rails.root.join('projects', 'websitegiare', 'sitemap-index.xml')
 
-    doc_sitemap = Nokogiri::XML(File.read('projects/websitegiare/sitemap-index.xml'))
+    doc_sitemap = Nokogiri::XML(File.read(doc_sitemap_index_path))
     div_sitemap = doc_sitemap.css('sitemap')
     div_sitemap[0].at('lastmod').content = Time.current.strftime('%Y-%m-%dT%H:%M:%S%:z')
     div_sitemap[1].at('lastmod').content = Time.current.strftime('%Y-%m-%dT%H:%M:%S%:z')
 
-    doc_sitemap_index_path = Rails.root.join('projects', 'websitegiare', 'sitemap-index.xml')
     File.write(doc_sitemap_index_path, doc_sitemap.to_xml)
 
     system('cd projects/websitegiare && git add . && git commit -m "New commit" && git push origin master -f')
