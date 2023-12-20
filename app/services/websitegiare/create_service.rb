@@ -199,7 +199,8 @@ class Product::CreateService
       </html>"
 
 
-    File.open("projects/websitegiare/" + resource.url, 'w') { |file| file.write(content_post) }
+    # File.open("projects/websitegiare/" + resource.url, 'w') { |file| file.write(content_post) }
+    File.write("projects/websitegiare/" + resource.url, content_post)
 
     # Sửa media
     doc_media = Nokogiri::HTML(File.read('projects/websitegiare/media.html'))
@@ -226,7 +227,9 @@ class Product::CreateService
       element_to_remove.remove
     end
 
-    File.open('projects/websitegiare/media.html', 'w') { |file| file.write(doc_media.to_html) }
+    # File.open('projects/websitegiare/media.html', 'w') { |file| file.write(doc_media.to_html) }
+    File.write('projects/websitegiare/media.html', doc_media.to_html)
+
 
     # Sửa luu tru
     if Product::Websitegiare.count > 20
@@ -246,7 +249,8 @@ class Product::CreateService
                                 </div>
                               </div>" + div_store.inner_html
 
-      File.open('projects/websitegiare/media-luu-tru.html', 'w') { |file| file.write(doc_store.to_html) }
+      # File.open('projects/websitegiare/media-luu-tru.html', 'w') { |file| file.write(doc_store.to_html) }
+      File.write('projects/websitegiare/media-luu-tru.html', doc_store.to_html)
     end
 
     # Sửa sitemap/media
