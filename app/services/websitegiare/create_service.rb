@@ -200,7 +200,8 @@ class Product::CreateService
 
 
     # File.open("projects/websitegiare/" + resource.url, 'w') { |file| file.write(content_post) }
-    File.write("projects/websitegiare/" + resource.url, content_post)
+    absolute_path = Rails.root.join('projects', 'websitegiare', resource.url)
+    File.write(absolute_path, content_post)
 
     # Sửa media
     doc_media = Nokogiri::HTML(File.read('projects/websitegiare/media.html'))
@@ -228,7 +229,8 @@ class Product::CreateService
     end
 
     # File.open('projects/websitegiare/media.html', 'w') { |file| file.write(doc_media.to_html) }
-    File.write('projects/websitegiare/media.html', doc_media.to_html)
+    media_path = Rails.root.join('projects', 'websitegiare', 'media.html')
+    File.write(media_path, doc_media.to_html)
 
 
     # Sửa luu tru
@@ -250,7 +252,8 @@ class Product::CreateService
                               </div>" + div_store.inner_html
 
       # File.open('projects/websitegiare/media-luu-tru.html', 'w') { |file| file.write(doc_store.to_html) }
-      File.write('projects/websitegiare/media-luu-tru.html', doc_store.to_html)
+      saver_media_path = Rails.root.join('projects', 'websitegiare', 'media-luu-tru.html')
+      File.write(saver_media_path, doc_store.to_html)
     end
 
     # Sửa sitemap/media
@@ -272,7 +275,8 @@ class Product::CreateService
     #   element_to_remove.remove
     # end
 
-    File.write('projects/websitegiare/sitemaps/media.xml', doc_sitemap_media)
+    media_xml_path = Rails.root.join('projects', 'websitegiare', 'sitemaps', 'media.xml')
+    File.write(media_xml_path, doc_sitemap_media)
 
 
     # Sửa sitemaps/kho-luu-tru
@@ -285,7 +289,8 @@ class Product::CreateService
                     <priority>0.6</priority>
                   </url" + div_sitemap_store.inner_html
 
-      File.write('projects/websitegiare/sitemaps/media-luu-tru.xml', doc_sitemap_store)
+      doc_sitemap_store_path = Rails.root.join('projects', 'websitegiare', 'sitemaps', 'media-luu-tru.xml')
+      File.write(doc_sitemap_store_path, doc_sitemap_store)
     end
 
     #sửa sitemap.xml
@@ -295,7 +300,8 @@ class Product::CreateService
     div_sitemap[0].at('lastmod').content = Time.current.strftime('%Y-%m-%dT%H:%M:%S%:z')
     div_sitemap[1].at('lastmod').content = Time.current.strftime('%Y-%m-%dT%H:%M:%S%:z')
 
-    File.write('projects/websitegiare/sitemap-index.xml', doc_sitemap.to_xml)
+    doc_sitemap_index_path = Rails.root.join('projects', 'websitegiare', 'sitemap-index.xml')
+    File.write(doc_sitemap_index_path, doc_sitemap.to_xml)
 
     system('cd projects/websitegiare && git add . && git commit -m "New commit" && git push origin master -f')
   end
