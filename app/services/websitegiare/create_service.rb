@@ -304,6 +304,6 @@ class Product::CreateService
     File.write(doc_sitemap_index_path, doc_sitemap.to_xml)
 
     websitegiare_path = Rails.root.join('projects', 'websitegiare')
-    system('cd ' + websitegiare_path + ' && git add . && git commit -m "New commit" && git push origin master -f')
+    system('cd ' + websitegiare_path.to_s + ' && git add . && git commit -m "New commit" && git push origin master -f')
   end
 end
