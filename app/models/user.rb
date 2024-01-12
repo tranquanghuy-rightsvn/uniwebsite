@@ -12,4 +12,8 @@ class User < ApplicationRecord
   def can_manage_website? website_id
     UserWebsiteRole.find_by(website_id: website_id, user_id: id).present?
   end
+
+  def is_owner_website? website_id
+    UserWebsiteRole.find_by(website_id: website_id, user_id: id).owner_website?
+  end
 end

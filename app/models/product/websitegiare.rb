@@ -15,8 +15,6 @@ class Product::Websitegiare < Product
   after_update_commit :update_data
   after_destroy_commit :delete_data
 
-  # validate :image_height_greater_than_or_equal_to_width
-
   def time_publish
     created_at.in_time_zone('Asia/Ho_Chi_Minh').strftime('%H:%M %d/%m/%Y')
   end
@@ -38,12 +36,6 @@ class Product::Websitegiare < Product
   def delete_data
     Websitegiare::DeleteService.new(self).perform
   end
-
-  # def image_height_greater_than_or_equal_to_width
-  #   if image? && image.height < image.width
-  #     errors.add(:image, "Chiều cao ảnh phải lớn hơn hoặc bằng chiều rộng.")
-  #   end
-  # end
 
   def content_copied?
     self.content_copied

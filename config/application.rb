@@ -11,13 +11,24 @@ module Uniwebsite
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
 
-    # Configuration for the application, engines, and railties goes here.
-    #
-    # These settings can be overridden in specific environments using the files
-    # in config/environments, which are processed later.
-    #
-    # config.time_zone = "Central Time (US & Canada)"
-    # config.eager_load_paths << Rails.root.join("extras")
+    config.to_prepare do
+      # Load application's model / class decorators
+      Dir.glob(File.join(File.dirname(__FILE__), "../app/**/*_decorator*.rb")) do |c|
+        Rails.configuration.cache_classes ? require(c) : load(c)
+      end
+    end
+    decorators = "#{Rails.root}/app/decorators"
+    Rails.autoloaders.main.ignore(decorators)
+
+    config.to_prepare do
+      Dir.glob(Rails.root.join 'app/decorators/**/*_decorator.rb') do |c|
+        Rails.configuration.cache_classes ? require(c) : load(c)
+      end
+    end
+
+    # config.autoload_paths += %W(#{config.root}/lib/modules)
+    config.autoload_paths += %W(#{config.root}/app/services/**)
+
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins '*'

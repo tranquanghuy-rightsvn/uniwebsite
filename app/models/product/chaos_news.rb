@@ -13,6 +13,14 @@ class Product::ChaosNews  < Product
 
   # validate :image_height_greater_than_or_equal_to_width
 
+  def time_publish
+    created_at.in_time_zone('Asia/Ho_Chi_Minh').strftime('%H:%M %d/%m/%Y')
+  end
+
+  def formated_time
+    created_at.in_time_zone('Asia/Ho_Chi_Minh').strftime('%Y-%m-%dT%H:%M:%S%:z')
+  end
+
   private
 
   def generate_data

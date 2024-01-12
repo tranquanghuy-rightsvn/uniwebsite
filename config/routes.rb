@@ -6,5 +6,6 @@ Rails.application.routes.draw do
 
   resources :websites do
     resources :products
+    resources :users
   end
 end
