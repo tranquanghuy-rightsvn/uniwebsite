@@ -49,7 +49,7 @@ class ProductsController < ApplicationController
   private
 
   def product_params
-    params.require("product_#{@brief}".to_sym).permit :title, :description, :content, :image, :url, :content_copied, :keywords
+    params.require("product_#{@brief}".to_sym).permit :title, :description, :content, :image, :url, :keywords
   end
 
   def check_manage_website
@@ -65,7 +65,7 @@ class ProductsController < ApplicationController
   end
 
   def product_update_params
-    params.require("#{@brief}".to_sym).permit :title, :description, :content, :image, :content_copied, :keywords
+    params.require("product_#{@brief}".to_sym).permit :title, :description, :content, :image, :keywords
   end
 
   def get_model
