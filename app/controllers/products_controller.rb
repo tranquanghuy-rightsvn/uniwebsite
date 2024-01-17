@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   before_action :check_manage_website
+  before_action :check_owner_website, only: [:edit, :update, :destroy]
   before_action :get_model
 
 
@@ -39,6 +40,12 @@ class ProductsController < ApplicationController
     end
   end
 
+  def destroy
+    @product = @model.find_by(website_id: params[:website_id], id: params[:id]).destroy!
+
+    redirect_to website_products_path(website_id: params[:website_id])
+  end
+
   private
 
   def product_params
@@ -47,6 +54,12 @@ class ProductsController < ApplicationController
 
   def check_manage_website
     unless current_user && current_user.can_manage_website?(params[:website_id])
+      redirect_to root_path
+    end
+  end
+
+  def check_owner_website
+    unless current_user && current_user.is_owner_website?(params[:website_id])
       redirect_to root_path
     end
   end

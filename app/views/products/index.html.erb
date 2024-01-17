@@ -11,7 +11,10 @@
       <% @products.map do |product| %>
         <tr>
           <td><%= product.title %></td>
-          <td><button class="btn btn-primary">Edit</button> &nbsp;<button class="btn btn-danger">Delete</button></td>
+          <td>
+            <%= link_to "<button class='btn btn-primary'>Edit</button>".html_safe, edit_website_product_path(website_id: params[:website_id], id: product.id) %>
+            &nbsp;
+            <%= link_to "<button class='btn btn-danger'>Delete</button></td>".html_safe, website_product_path(website_id: params[:website_id], id: product.id), method: :delete, data: {confirm: 'Bạn muốn xóa không?'} %>
         </tr>
       <% end %>
     </tbody>
