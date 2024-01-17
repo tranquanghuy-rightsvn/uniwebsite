@@ -1,0 +1,505 @@
+.festival-show-detail-main {
+  background-color: #fff;
+}
+.festival-show-detail-main #site-header {
+  z-index: 1;
+}
+.festival-show-detail-main .festival-show-detail {
+  padding: 0 !important;
+}
+.festival-show-detail-main .section-detail-top-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 0 16px;
+}
+.festival-show-detail-main .section-detail-top-title h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 140%;
+  text-align: center;
+  color: #343a40;
+  max-width: 455px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.festival-show-detail-main .section-detail-top-title .short-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #343a40;
+  margin-bottom: 0;
+}
+.festival-show-detail-main .banner-wrapper.pquc .img-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 45.62%,
+    #ffffff 100%
+  );
+  height: 335px;
+  bottom: 0;
+}
+.festival-show-detail-main .banner-wrapper.pquc {
+  position: relative;
+  margin-bottom: 0;
+}
+.festival-show-detail #slide-gallery img {
+  width: 270px;
+  height: 270px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.detail_res .res_gallery {
+  padding-top: 60px;
+}
+.detail_res .res_gallery .swiper-slide {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: gray;
+  width: 270px;
+}
+.detail_res img {
+  width: 100%;
+}
+.festival-show-detail #slide-gallery .gallery-wrapper {
+  overflow: visible;
+}
+.festival-show-detail #slide-gallery .gallery-wrapper .owl-stage {
+  display: flex;
+}
+.festival-show-detail #slide-gallery .gallery-wrapper .owl-item {
+  width: 270px !important;
+  height: 270px !important;
+  opacity: 0.5;
+}
+.festival-show-detail #slide-gallery .gallery-wrapper .owl-item.active {
+  opacity: 1;
+}
+.festival-show-detail #slide-gallery .gallery-wrapper .owl-next,
+.festival-show-detail #slide-gallery .gallery-wrapper .owl-prev {
+  display: none;
+}
+.festival-show-detail .festival-summary-section {
+  margin: 60px 0;
+}
+.festival-show-detail .festival-summary-section p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #343a40;
+}
+.festival-show-detail .info-location-detail-wrapper {
+  padding-left: 48px;
+  padding-top: 24px;
+}
+.festival-show-detail
+  .info-location-detail-wrapper
+  .section-detail-top-title-card {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000;
+  margin: 0;
+}
+.festival-show-detail
+  .info-location-detail-wrapper
+  .travel-exploration-top-right-content
+  .card
+  .card-body {
+  padding: 0 !important;
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.festival-show-detail
+  .info-location-detail-wrapper
+  .travel-exploration-top-right-content
+  .card
+  .card-body
+  p.card-content.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #343a40;
+  display: flex;
+  align-items: start;
+  margin-bottom: 8px;
+}
+.festival-show-detail
+  .info-location-detail-wrapper
+  .travel-exploration-top-right-content
+  .card
+  .card-body
+  p.card-content.text
+  img.icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  margin-top: 2px;
+}
+.festival-show-detail
+  .info-location-detail-wrapper
+  .travel-exploration-top-right-content
+  .button-more
+  .show-detail-top-button {
+  outline: none;
+  border: none;
+  background: #e8952f;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.festival-show-detail .info-location-detail-wrapper .festival-util-wrapper {
+  margin: 0 !important;
+  margin-bottom: 24px !important;
+  margin-top: 32px !important;
+}
+.festival-show-detail
+  .info-location-detail-wrapper
+  .festival-util-wrapper
+  .base-icon {
+  width: 42px;
+  height: 42px;
+  background: #fdefec;
+  border-radius: 21px;
+  float: left;
+  padding: 8px;
+  vertical-align: middle;
+  text-align: center;
+}
+.festival-show-detail
+  .info-location-detail-wrapper
+  .festival-util-wrapper
+  .base-icon
+  .icon {
+  width: 16px;
+  height: 16px;
+}
+.festival-show-detail
+  .info-location-detail-wrapper
+  .festival-util-wrapper
+  .util-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.festival-show-detail
+  .info-location-detail-wrapper
+  .festival-util-wrapper
+  .util-item
+  .util-name {
+  margin-left: 8px;
+  margin-bottom: 0;
+  width: calc(100% - 50px);
+  font-size: 14px;
+  line-height: 20px;
+  color: #343a40;
+}
+.festival-show-detail .info-location-detail-wrapper.button-more {
+  margin-bottom: -40px;
+  margin-top: 16px;
+}
+.festival-show-detail .info-location-detail-map-wrapper figure.img-box {
+  border-radius: 4px;
+}
+.festival-show-detail .other-show-detail-heading .show-detail-top-title-card {
+  font-stretch: normal;
+  letter-spacing: 0.67px;
+  text-align: left;
+  padding-bottom: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  color: #000;
+}
+.festival-show-detail .other-show-detail-heading {
+  margin: 60px 0 32px;
+}
+.festival-show-detail .related-festival .love {
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  z-index: 1;
+}
+.festival-show-detail .related-festival .card .icon-like {
+  background: 0 0;
+}
+.festival-show-detail .related-festival .swiper-slide {
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.festival-show-detail .related-festival .swiper-slide > .card {
+  border: 1px solid #ced4da !important;
+  border-radius: 4px !important;
+  height: 346px;
+}
+.festival-show-detail .related-festival .card .card-body {
+  padding: 12px 11px 11px !important;
+}
+.festival-show-detail .show-detail-content .related-festival .card-title {
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #343a40;
+  margin: 0 0 12px;
+}
+.festival-show-detail .show-detail-content .related-festival .card-content {
+  font-family: montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #222;
+  position: relative;
+  padding-left: 25px;
+}
+.festival-show-detail
+  .show-detail-content
+  .related-festival
+  .card
+  .map::before {
+  content: " ";
+  background-image: url(../../images/festival-pquc/pin-ico.svg);
+  position: absolute;
+  background-size: 100% 100%;
+  left: 0;
+  height: 16px;
+  width: 16px;
+}
+.festival-show-detail
+  .show-detail-content
+  .related-festival
+  .card
+  .phone::before {
+  content: " ";
+  background-image: url(../../images/festival-pquc/phone-ico.svg);
+  position: absolute;
+  background-size: 100% 100%;
+  height: 16px;
+  width: 16px;
+  left: 0;
+}
+.festival-show-detail
+  .show-detail-content
+  .related-festival
+  .card
+  .open-time::before {
+  content: " ";
+  background-image: url(../../images/festival-pquc/clock-ico.svg);
+  position: absolute;
+  background-size: 100% 100%;
+  height: 16px;
+  width: 16px;
+  left: 0;
+}
+.festival-show-detail .modal-content-header .title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  color: #343a40;
+}
+.festival-show-detail .modal-content-body .title-item {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #343a40;
+  margin-bottom: 12px;
+  white-space: nowrap;
+}
+#form-register-festival {
+  margin-top: 20px;
+}
+#form-register-festival .form-item {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+#form-register-festival .g-recaptcha {
+  margin-bottom: 32px;
+}
+.festival-show-detail .modal-content-body .text-desc {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  margin-left: 5px;
+  width: auto;
+  display: block;
+}
+.festival-show-detail .modal-content-body textarea {
+  resize: none;
+}
+.festival-show-detail .modal-content-body .form-control,
+.festival-show-detail .modal-content-body .form-control:hover,
+.festival-show-detail .modal-content-body .form-control:focus,
+.festival-show-detail .modal-content-body .form-item .form-control.error {
+  border: 1px solid #ced4da !important;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.festival-show-detail .modal-content-body .text-term {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #353c46;
+}
+.festival-show-detail .modal-content-body .control-label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #343a40;
+}
+.festival-show-detail .modal-content-body .control-label:after {
+  content: "*";
+  color: red;
+}
+.festival-show-detail .modal.show .modal-dialog {
+  border-radius: 8px;
+  max-width: 748px;
+}
+.festival-show-detail .modal.show .modal-dialog .container-banner img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.festival-show-detail .modal.show .modal-dialog .modal-content-header {
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+}
+.festival-show-detail .modal.show .modal-dialog .modal-content-body {
+  padding: 0 32px 32px !important;
+}
+.festival-show-detail .modal-content-body .red {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #18a0fb;
+}
+.festival-show-detail-main .info-location-detail-map-wrapper iframe {
+  width: 100%;
+  height: 451px;
+}
+@media (min-width: 991px) {
+  .festival-show-detail .info-location-detail-wrapper {
+    width: calc(100% - 677px);
+    max-width: unset;
+    flex: unset;
+  }
+  .festival-show-detail-main .info-location-detail-map-wrapper {
+    width: 663px;
+    height: 451px;
+    max-width: unset;
+    flex: unset;
+    padding: 0 16px !important;
+    padding-right: 0 !important;
+  }
+}
+@media (max-width: 480px) {
+  .festival-show-detail-main .festival-show-detail {
+    padding: 0 16px !important;
+  }
+  .festival-show-detail-main .festival-show-detail > .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .festival-show-detail-main
+    .festival-show-detail
+    > .container
+    > .row:not(.festival-summary-section):not(.other-show-detail-heading) {
+    margin: 0;
+  }
+  .festival-show-detail .info-location-detail-wrapper {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .festival-show-detail-main .info-location-detail-map-wrapper iframe {
+    height: 227px;
+  }
+  .festival-show-detail
+    .info-location-detail-wrapper
+    .section-detail-top-title-card {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .related-festival {
+    margin-right: -16px;
+  }
+  .festival-show-detail
+    .info-location-detail-wrapper
+    .festival-util-wrapper
+    .util-item {
+    width: 49% !important;
+  }
+  .festival-show-detail .other-show-detail-heading .show-detail-top-title-card {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  body.path-phu-quoc .festival-show-detail .button-more {
+    margin-bottom: 0;
+  }
+  .festival-show-detail .other-show-detail-heading {
+    margin-top: 48px;
+  }
+  .detail_res .res_gallery {
+    padding-top: 0;
+  }
+  .festival-show-detail-main .section-detail-top-title {
+    margin-bottom: 32px;
+  }
+  .festival-show-detail .festival-summary-section {
+    margin-top: 48px;
+  }
+}
+.left-blur {
+  position: absolute;
+  height: calc(100% - 60px);
+  background: rgb(255 255 255/60%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+}
+.right-blur {
+  position: absolute;
+  height: calc(100% - 60px);
+  background: rgb(255 255 255/60%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+}

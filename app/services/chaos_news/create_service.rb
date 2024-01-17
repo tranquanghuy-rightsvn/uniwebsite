@@ -168,8 +168,8 @@ class Product::CreateService
 
 #     File.write("projects/chaos_news/index.html", content_index)
 
-#     system('cd projects/chaos_news && git add . && git commit --amend --no-edit && git push origin master -f')
-    # chaos_news_path = Rails.root.join('projects', 'chaos_news')
-    # system('cd ' + chaos_news_path.to_s + ' && git add . && git commit -m "New commit" && git push origin master -f')
+   # system('cd projects/chaos_news && git add . && git commit --amend --no-edit && git push origin master -f')
+    chaos_news_path = Rails.root.join('projects', 'chaos_news')
+    system('cd ' + chaos_news_path.to_s + ' && git add . && git commit -m "New commit" && git push origin master -f')
   end
 end
