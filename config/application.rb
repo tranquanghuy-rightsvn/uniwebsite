@@ -1,3 +1,4 @@
+
 require_relative "boot"
 
 require "rails/all"
@@ -26,8 +27,16 @@ module Uniwebsite
       end
     end
 
+    config.to_prepare do
+      Dir.glob(Rails.root.join 'app/services/**/*_service.rb') do |c|
+        Rails.configuration.cache_classes ? require(c) : load(c)
+      end
+    end
+
     # config.autoload_paths += %W(#{config.root}/lib/modules)
-    config.autoload_paths += %W(#{config.root}/app/services/**)
+
+    config.autoload_paths += %W(#{config.root}/app/services/chaos_news)
+    config.autoload_paths += %W(#{config.root}/app/services/zreview)
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do

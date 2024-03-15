@@ -1,4 +1,4 @@
-class Product::DeleteService
+class Websitegiare::DeleteService
   attr_accessor :resource
 
   def initialize resource

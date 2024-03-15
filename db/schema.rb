@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2024_01_12_125044) do
 
-  create_table "action_text_rich_texts", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "action_text_rich_texts", charset: "utf8mb4", force: :cascade do |t|
     t.string "name", null: false
     t.text "body", size: :long
     t.string "record_type", null: false
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2024_01_12_125044) do
     t.index ["record_type", "record_id", "name"], name: "index_action_text_rich_texts_uniqueness", unique: true
   end
 
-  create_table "active_storage_attachments", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "active_storage_attachments", charset: "utf8mb4", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
     t.bigint "record_id", null: false
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2024_01_12_125044) do
     t.index ["record_type", "record_id", "name", "blob_id"], name: "index_active_storage_attachments_uniqueness", unique: true
   end
 
-  create_table "active_storage_blobs", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "active_storage_blobs", charset: "utf8mb4", force: :cascade do |t|
     t.string "key", null: false
     t.string "filename", null: false
     t.string "content_type"
@@ -44,13 +44,13 @@ ActiveRecord::Schema.define(version: 2024_01_12_125044) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
-  create_table "active_storage_variant_records", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "active_storage_variant_records", charset: "utf8mb4", force: :cascade do |t|
     t.bigint "blob_id", null: false
     t.string "variation_digest", null: false
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
-  create_table "categories", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "categories", charset: "utf8mb4", force: :cascade do |t|
     t.string "name"
     t.bigint "website_id"
     t.datetime "created_at", precision: 6, null: false
@@ -58,7 +58,7 @@ ActiveRecord::Schema.define(version: 2024_01_12_125044) do
     t.index ["website_id"], name: "index_categories_on_website_id"
   end
 
-  create_table "products", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "products", charset: "utf8mb4", force: :cascade do |t|
     t.string "title", null: false
     t.string "description"
     t.string "price"
@@ -77,7 +77,7 @@ ActiveRecord::Schema.define(version: 2024_01_12_125044) do
     t.index ["website_id"], name: "index_products_on_website_id"
   end
 
-  create_table "user_website_roles", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "user_website_roles", charset: "utf8mb4", force: :cascade do |t|
     t.integer "role", default: 0, null: false
     t.bigint "user_id"
     t.bigint "website_id"
@@ -87,7 +87,7 @@ ActiveRecord::Schema.define(version: 2024_01_12_125044) do
     t.index ["website_id"], name: "index_user_website_roles_on_website_id"
   end
 
-  create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "users", charset: "utf8mb4", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
@@ -100,7 +100,7 @@ ActiveRecord::Schema.define(version: 2024_01_12_125044) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  create_table "websites", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "websites", charset: "utf8mb4", force: :cascade do |t|
     t.string "name"
     t.string "brief"
     t.string "github"

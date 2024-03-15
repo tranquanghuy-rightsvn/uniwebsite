@@ -6,7 +6,6 @@ class ProductsController < ApplicationController
 
   def new
     @product = @model.new
-
   end
 
   def create
@@ -49,7 +48,7 @@ class ProductsController < ApplicationController
   private
 
   def product_params
-    params.require("product_#{@brief}".to_sym).permit :title, :description, :content, :image, :url, :keywords
+    params.require("product_#{@brief}".to_sym).permit :title, :description, :content, :image, :url, :keywords, :category_id
   end
 
   def check_manage_website
@@ -65,7 +64,7 @@ class ProductsController < ApplicationController
   end
 
   def product_update_params
-    params.require("product_#{@brief}".to_sym).permit :title, :description, :content, :image, :keywords
+    params.require("product_#{@brief}".to_sym).permit :title, :description, :content, :image, :keywords, :category_id
   end
 
   def get_model

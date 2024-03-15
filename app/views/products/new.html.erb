@@ -26,7 +26,7 @@
       <%= form.text_field :description, class: "form-control" %>
     </div>
 
-    <% if @model.validators_on(:category).any? { |v| v.is_a?(ActiveRecord::Validations::PresenceValidator) } %>
+    <% if @model.validators_on(:category_id).any? { |v| v.is_a?(ActiveRecord::Validations::PresenceValidator) } %>
       <div class="form-group">
         <%= form.label :category %>
         <%= form.select(:category_id, options_for_select(Category.generate_options(params[:website_id])), {}, class: "form-control") %>
@@ -42,11 +42,6 @@
       <%= form.label :keywords %>
       <input class="form-control" id="keywords-field">
       <%= form.hidden_field :keywords, class: "form-control", id: "product_websitegiare_keywords" %>
-    </div>
-
-    <div class="form-group">
-      <%= form.check_box :content_copied %>
-      <%= form.label :content_copied, "Sao chép nội dung từ nguồn khác?" %>
     </div>
 
     <div class="form-group">
