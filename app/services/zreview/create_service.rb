@@ -101,6 +101,8 @@ module Zreview
       'name': 'Zreview'
       }
       }
+      var cate_path = " + category_direct_path[0...-5] + ";
+      var cate_name = " + resource.category.name + ";
       </script>" + content_temp
 
       doc_root_post = Nokogiri::HTML(content_html.to_s)
@@ -116,7 +118,7 @@ module Zreview
 
       news_reference = doc_root_post.at_css('#news-reference')
       list_news_html = ""
-      Product::Zreview.same_category(resource).order(id: :desc).limit(6).map do |product|
+      Product::Zreview.same_category(resource).order(id: :desc).limit(6).offset(1).map do |product|
         product_img= product.image.url.split("/")[-3..-1].join("/")
         list_news_html += "<article zone-ad-name='' class='article-item znews-native type-text picked-featured'>
            <p class='article-thumbnail'>
@@ -221,7 +223,7 @@ module Zreview
       list_news_4 = doc_list_news.at_css('#list-book')
       list_news_html = ""
 
-      Product::Zreview.by_books.order(id: :desc).limit(5).map do |product|
+      Product::Zreview.by_books.order(id: :desc).limit(3).map do |product|
         product_img= product.image.url.split("/")[-3..-1].join("/")
         list_news_html += "<article class='article-item znews-native type-text'>
             <p class='article-thumbnail'>
@@ -244,7 +246,56 @@ module Zreview
       list_news_5 = doc_list_news.at_css('#list-film')
       list_news_html = ""
 
-      Product::Zreview.by_films.order(id: :desc).limit(5).map do |product|
+      list_news_10 = doc_list_news.at_css('#top-list-book')
+      list_news_html = ""
+
+      Product::Zreview.by_books.order(id: :desc).limit(5).offset(3).map do |product|
+        product_img= product.image.url.split("/")[-3..-1].join("/")
+        list_news_html += "<article class='article-item znews-native type-text'>
+            <p class='article-thumbnail'>
+              <a href='./" + product.url + "'>
+
+                <img src='" + product_img + "' alt='" + product.title.capitalize + "' alt='" + product.title.capitalize + "' />
+              </a>
+            </p>
+            <header>
+              <p class='article-title'>
+                <a href='./" + product.url + "'>" + product.title.capitalize + "</a>
+              </p>
+              <p class='article-summary'>" + product.description + "</p>
+            </header>
+          </article>"
+      end
+
+      list_news_10.inner_html = list_news_html
+
+      list_news_11 = doc_list_news.at_css('#top-list-film')
+      list_news_html = ""
+
+      Product::Zreview.by_films.order(id: :desc).limit(5).offset(3).map do |product|
+        product_img= product.image.url.split("/")[-3..-1].join("/")
+        list_news_html += "<article class='article-item znews-native type-text'>
+            <p class='article-thumbnail'>
+              <a href='./" + product.url + "'>
+
+                <img src='" + product_img + "' alt='" + product.title.capitalize + "' alt='" + product.title.capitalize + "' />
+              </a>
+            </p>
+            <header>
+              <p class='article-title'>
+                <a href='./" + product.url + "'>" + product.title.capitalize + "</a>
+              </p>
+              <p class='article-summary'>" + product.description + "</p>
+            </header>
+          </article>"
+      end
+
+      list_news_11.inner_html = list_news_html
+
+      list_news_5 = doc_list_news.at_css('#list-film')
+      list_news_html = ""
+
+      Product::Zreview.by_films.order(id: :desc).limit(3).map do |product|
         product_img= product.image.url.split("/")[-3..-1].join("/")
         list_news_html += "<article class='article-item znews-native type-text'>
             <p class='article-thumbnail'>
