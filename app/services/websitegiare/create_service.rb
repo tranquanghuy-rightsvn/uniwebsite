@@ -1,4 +1,4 @@
-class Product::CreateService
+class Websitegiare::CreateService
   attr_accessor :resource
 
   def initialize resource
@@ -303,7 +303,7 @@ class Product::CreateService
 
     File.write(doc_sitemap_index_path, doc_sitemap.to_xml)
 
-    websitegiare_path = Rails.root.join('projects', 'websitegiare')
-    system('cd ' + websitegiare_path.to_s + ' && git add . && git commit -m "New commit" && git push origin master -f')
+    # websitegiare_path = Rails.root.join('projects', 'websitegiare')
+    # system('cd ' + websitegiare_path.to_s + ' && git add . && git commit -m "New commit" && git push origin master -f')
   end
 end

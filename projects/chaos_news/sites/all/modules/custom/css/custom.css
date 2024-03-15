@@ -1,0 +1,3495 @@
+tr.draggable > td.views-field-draggableviews,
+tr.draggable > td.views-field-draggableviews a {
+  display: block !important;
+}
+.page-node-type-hotel .vp-container {
+  background-color: #fff;
+}
+.node-hotel .trip-ad-dot-outer {
+  padding: 0 !important;
+  width: 10px;
+  height: 10px;
+  margin-left: 0;
+  margin-top: 0;
+  border: 1px solid #20c997 !important;
+}
+.node-hotel div.trip-wrapper span.trip-ad-dot:not(.half) {
+  height: 8px;
+  width: 8px;
+  top: 0;
+  left: 0;
+}
+.node-hotel div.trip-wrapper span.trip-ad-dot.half {
+  border-radius: unset;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 8px;
+  width: 4px;
+  top: 0;
+  left: 0;
+}
+.node-hotel div.trip-wrapper span.trip-ad-dot {
+  height: 10px;
+  width: 10px;
+  background-color: #20c997;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 1px;
+  top: 1px;
+}
+.node-hotel .owl-dots {
+  display: none;
+}
+.node-hotel .owl-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+.node-hotel .owl-dots button.owl-dot {
+  background: 0 0;
+  color: inherit;
+  border: none;
+  padding: 0 !important;
+  font: inherit;
+}
+.node-hotel .owl-dots .owl-dot span {
+  width: 8px;
+  height: 8px;
+  margin: 7px 4px;
+  background: #ced4da;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 0.2s ease;
+  border-radius: 30px;
+}
+.node-hotel .owl-dots .owl-dot.active {
+  border: none;
+}
+.node-hotel .owl-dots .owl-dot:focus {
+  outline: none;
+}
+.node-hotel .owl-dots .owl-dot.active span {
+  width: 12px;
+  height: 12px;
+  background: #e8952f;
+  margin: 5px 4px;
+}
+.node-hotel .menu-tabs-mobile {
+  display: none;
+  letter-spacing: normal;
+}
+.node-hotel .menu-tabs-mobile .menu-tabs-button {
+  font-family: Montserrat;
+  width: 100%;
+  color: #343a40;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+}
+.node-hotel .menu-tabs-mobile .dropdown-menu {
+  font-family: Montserrat;
+  width: 100%;
+}
+.node-hotel .menu-tabs-mobile .dropdown-toggle::after {
+  display: inline-block;
+  content: url(../img/icon-arrow-down.svg);
+  color: #343a40;
+  font-weight: 700;
+  border-top: none;
+  position: absolute;
+  right: 10px;
+  top: 11px;
+}
+.node-hotel .menu-tabs-mobile .menu-tabs-button .menu-tabs-label {
+  width: 100%;
+  text-align: left;
+  text-transform: none;
+}
+.node-hotel .event-map-room .nav-item .nav-link {
+  color: #222;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+}
+.node-hotel .event-map-room .nav-item.active .nav-link {
+  font-weight: 600;
+}
+.node-hotel .event-map-room .nav-tabs {
+  border-bottom-width: 1px;
+}
+.node-hotel .modal .modal-dialog .modal-content {
+  background: #fff;
+}
+.node-hotel .event-map-room .nav-tabs .nav-item.active a.nav-link,
+.node-hotel .event-map-room .nav-tabs .nav-item a.nav-link:hover {
+  border-bottom-width: 2px !important;
+  height: 95% !important;
+}
+.node-hotel .room-listing-block .item-list ul li {
+  margin: 0;
+  padding: 10px;
+  list-style-type: none;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.node-hotel .room-listing-block .node-teaser > .vp-card-promotion {
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #d5d5d5;
+  overflow: hidden;
+  margin-bottom: 24px !important;
+  box-shadow: none;
+}
+.node-hotel .room-listing-block .node-teaser .info_wrapper {
+  padding-left: 24px;
+  padding-top: 15px;
+  padding-right: 35px;
+  padding-bottom: 24px;
+}
+.node-hotel .room-listing-block .node-teaser.img_wrapper {
+  padding-left: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  min-height: 312px;
+}
+.node-hotel .room-listing-block .node-teaser .info_wrapper h3 {
+  text-transform: unset !important;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 15px;
+  width: auto;
+}
+.node-hotel .room-listing-block .node-teaser .img_wrapper {
+  margin-bottom: 30px;
+  padding-top: 15px;
+  height: 100%;
+}
+.node-hotel .room-listing-block .node-teaser .img_wrapper img {
+  border-radius: 5px;
+  height: 260px;
+}
+.node-hotel .room-listing-block .node-teaser .info_wrapper p.room-main-des {
+  margin-bottom: 16px !important;
+  text-align: justify;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.node-hotel
+  .room-listing-block
+  .node-teaser
+  .info_wrapper
+  p.room-main-des.room-detail {
+  min-height: 63px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 12px !important;
+}
+.node-hotel
+  .room-listing-block
+  .node-teaser
+  .info_wrapper
+  p.room-main-des
+  .dien-tich,
+.node-hotel .room-listing-block .node-teaser .info_wrapper p.room-main-des .des,
+.node-hotel .room-listing-block .node-teaser .info_wrapper p.room-main-des img {
+  margin-right: 5px;
+}
+.node-hotel .room-listing-block .node-teaser .info_wrapper .room-attr-wrapper {
+  margin-bottom: 20px;
+}
+.node-hotel .room-listing-block .node-teaser .info_wrapper .vpw-play-room-attr {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+.node-hotel
+  .room-listing-block
+  .node-teaser
+  .info_wrapper
+  .vpw-play-room-attr
+  .attr {
+  margin-right: 23px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: auto;
+  display: inline-block;
+}
+.node-hotel
+  .room-listing-block
+  .node-teaser
+  .info_wrapper
+  .vpw-play-room-attr
+  .attr.show-more {
+  margin-right: 0;
+  margin-left: 5px;
+}
+.node-hotel
+  .room-listing-block
+  .node-teaser
+  .info_wrapper
+  .vpw-play-room-attr
+  .attr
+  img.ico {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.node-hotel .room-listing-block .node-teaser .info_wrapper .dat-phong-wrapper {
+}
+.node-hotel
+  .room-listing-block
+  .node-teaser
+  .info_wrapper
+  .dat-phong-wrapper
+  .gia-phong {
+  width: 100%;
+  height: 100%;
+  padding-top: 33px;
+  margin-bottom: 20px;
+}
+.node-hotel
+  .room-listing-block
+  .node-teaser
+  .info_wrapper
+  .dat-phong-wrapper
+  .gia-phong
+  .chi-tu {
+  font-weight: 400;
+  font-size: 12px;
+}
+.node-hotel
+  .room-listing-block
+  .node-teaser
+  .info_wrapper
+  .dat-phong-wrapper
+  .gia-phong
+  span.price
+  span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #e8952f;
+  margin: 0 4px;
+  line-height: 23px;
+}
+.node-hotel
+  .room-listing-block
+  .node-teaser
+  .info_wrapper
+  .dat-phong-wrapper
+  .dat-phong-btn {
+  height: 48px;
+  left: 0;
+  top: 3px;
+  background: #e8952f;
+  border-radius: 4px;
+  text-align: center;
+  position: relative;
+}
+.node-hotel
+  .room-listing-block
+  .node-teaser
+  .info_wrapper
+  .dat-phong-wrapper
+  .dat-phong-btn
+  button {
+  text-transform: none;
+  font-size: 16px;
+  border-radius: 4px;
+  width: 100%;
+}
+.node-hotel
+  .room-listing-block
+  .node-teaser
+  .info_wrapper
+  .dat-phong-wrapper
+  .dat-phong-btn
+  .lien-he-ks {
+  text-transform: none;
+  font-size: 16px;
+  border-radius: 4px;
+  width: 100%;
+}
+.page-node-type-hotel .vp-group-brands {
+  display: block !important;
+  margin-top: 0;
+}
+.node-hotel h1,
+.node-hotel h2 {
+  font-size: 28px;
+}
+.node-full.node-hotel h2.tit-box {
+  font-size: 28px !important;
+}
+.page-node-type-hotel .vp-group-brands {
+  display: block;
+  margin-top: 0;
+}
+.node-hotel .vpw-card .card-box-img {
+  overflow: hidden;
+  position: relative;
+}
+.node-hotel #detail-am-thuc h2.tit-box,
+.node-hotel #detail-spa h2.tit-box,
+.node-hotel #detail-utility h2.tit-box,
+.node-hotel #detail-news h2.tit-box,
+.node-hotel #detail-entertainment h2.tit-box,
+.node-hotel #detail-room h2.tit-box,
+.node-hotel #detail-room h2.tit-box {
+  padding-top: 0;
+}
+.node-hotel .vpw-play-rooms,
+.node-hotel .vpw-play-meeting,
+.node-hotel .vpw-play-wedding,
+.node-hotel .vpw-play-tin-tuc,
+.node-hotel .vpw-play-giai-tri,
+.node-hotel .vpw-play-uu-dai {
+  overflow: hidden;
+}
+.node-hotel .vpw-play-rooms .owl-stage,
+.node-hotel .vpw-play-meeting .owl-stage,
+.node-hotel .vpw-play-wedding .owl-stage,
+.node-hotel .vpw-play-tin-tuc .owl-stage,
+.node-hotel .vpw-play-giai-tri .owl-stage,
+.node-hotel .vpw-play-uu-dai .owl-stage {
+  display: flex;
+  padding-left: 0 !important;
+}
+.node-hotel .vpw-play-rooms .owl-nav button,
+.node-hotel .vpw-play-meeting .owl-nav button,
+.node-hotel .vpw-play-wedding .owl-nav button,
+.node-hotel .vpw-play-tin-tuc .owl-nav button,
+.node-hotel .vpw-play-giai-tri .owl-nav button,
+.node-hotel .vpw-play-uu-dai .owl-nav button {
+  position: absolute;
+  top: 30%;
+  border-radius: 50%;
+}
+.node-hotel .vpw-play-rooms .owl-nav button.owl-prev,
+.node-hotel .vpw-play-meeting .owl-nav button.owl-prev,
+.node-hotel .vpw-play-wedding .owl-nav button.owl-prev,
+.node-hotel .vpw-play-tin-tuc .owl-nav button.owl-prev,
+.node-hotel .vpw-play-giai-tri .owl-nav button.owl-prev,
+.node-hotel .vpw-play-uu-dai .owl-nav button.owl-prev {
+  left: 30px;
+}
+.node-hotel .vpw-play-rooms .owl-nav button.owl-next,
+.node-hotel .vpw-play-meeting .owl-nav button.owl-next,
+.node-hotel .vpw-play-wedding .owl-nav button.owl-next,
+.node-hotel .vpw-play-tin-tuc .owl-nav button.owl-next,
+.node-hotel .vpw-play-giai-tri .owl-nav button.owl-next,
+.node-hotel .vpw-play-uu-dai .owl-nav button.owl-next {
+  right: 30px;
+}
+.node-hotel .vpw-play-rooms .owl-nav button,
+.node-hotel .vpw-play-meeting .owl-nav button,
+.node-hotel .vpw-play-wedding .owl-nav button,
+.node-hotel .vpw-play-tin-tuc .owl-nav button,
+.node-hotel .vpw-play-giai-tri .owl-nav button,
+.node-hotel .vpw-play-uu-dai .owl-nav button {
+  border: none;
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  outline: none;
+}
+.node-hotel .vpw-play-rooms .owl-nav button span,
+.node-hotel .vpw-play-meeting .owl-nav button span,
+.node-hotel .vpw-play-wedding .owl-nav button span,
+.node-hotel .vpw-play-tin-tuc .owl-nav button span,
+.node-hotel .vpw-play-giai-tri .owl-nav button span,
+.node-hotel .vpw-play-uu-dai .owl-nav button span {
+  font-size: 50px;
+  line-height: 25px;
+}
+.node-hotel .vpw-play-rooms .owl-nav button:first-child,
+.node-hotel .vpw-play-meeting .owl-nav button:first-child,
+.node-hotel .vpw-play-wedding .owl-nav button:first-child,
+.node-hotel .vpw-play-tin-tuc .owl-nav button:first-child,
+.node-hotel .vpw-play-giai-tri .owl-nav button:first-child,
+.node-hotel .vpw-play-uu-dai .owl-nav button:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.node-hotel .vpw-play-rooms .owl-nav button:last-child,
+.node-hotel .vpw-play-meeting .owl-nav button:last-child,
+.node-hotel .vpw-play-wedding .owl-nav button:last-child,
+.node-hotel .vpw-play-tin-tuc .owl-nav button:last-child,
+.node-hotel .vpw-play-giai-tri .owl-nav button:last-child,
+.node-hotel .vpw-play-uu-dai .owl-nav button:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.node-hotel .vpw-play-rooms .owl-next.disabled:before,
+.node-hotel .vpw-play-meeting .owl-next.disabled:before,
+.node-hotel .vpw-play-wedding .owl-next.disabled:before,
+.node-hotel .vpw-play-tin-tuc .owl-next.disabled:before,
+.node-hotel .vpw-play-giai-tri .owl-next.disabled:before,
+.node-hotel .vpw-play-uu-dai .owl-next.disabled:before {
+  border-color: transparent transparent transparent #fff !important;
+}
+.node-hotel .vpw-play-rooms .owl-prev.disabled:before,
+.node-hotel .vpw-play-meeting .owl-prev.disabled:before,
+.node-hotel .vpw-play-wedding .owl-prev.disabled:before,
+.node-hotel .vpw-play-tin-tuc .owl-prev.disabled:before,
+.node-hotel .vpw-play-giai-tri .owl-prev.disabled:before,
+.node-hotel .vpw-play-uu-dai .owl-prev.disabled:before {
+  border-color: transparent #fff transparent transparent !important;
+}
+.node-hotel .vpw-play-rooms .room_attr.row,
+.node-hotel .vpw-play-meeting .room_attr.row,
+.node-hotel .vpw-play-wedding .room_attr.row,
+.node-hotel .vpw-play-tin-tuc .room_attr.row,
+.node-hotel .vpw-play-giai-tri .room_attr.row,
+.node-hotel .vpw-play-uu-dai .room_attr.row {
+  height: 160px;
+  overflow: auto;
+}
+.node-hotel .vpw-play-rooms .room_attr.row::-webkit-scrollbar,
+.node-hotel .vpw-play-meeting .room_attr.row::-webkit-scrollbar,
+.node-hotel .vpw-play-wedding .room_attr.row::-webkit-scrollbar,
+.node-hotel .vpw-play-tin-tuc .room_attr.row::-webkit-scrollbar,
+.node-hotel .vpw-play-giai-tri .room_attr.row::-webkit-scrollbar,
+.node-hotel .vpw-play-uu-dai .room_attr.row::-webkit-scrollbar {
+  width: 0;
+}
+.node-hotel .vpw-play-rooms .vpw-card,
+.node-hotel .vpw-play-meeting .vpw-card,
+.node-hotel .vpw-play-wedding .vpw-card,
+.node-hotel .vpw-play-tin-tuc .vpw-card,
+.node-hotel .vpw-play-giai-tri .vpw-card,
+.node-hotel .vpw-play-uu-dai .vpw-card {
+  background-color: transparent;
+}
+.node-hotel #detail-news .vpw-card,
+.node-hotel #detail-entertainment .vpw-card,
+.node-hotel #detail-room .vpw-card {
+  background-color: transparent;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.node-hotel #detail-meeting .vpw-play-meeting .owl-nav button span,
+.node-hotel #detail-wedding .vpw-play-wedding .owl-nav button span,
+.node-hotel #detail-news .vpw-play-tin-tuc .owl-nav button span,
+.node-hotel #detail-entertainment .vpw-play-giai-tri .owl-nav button span,
+.node-hotel #detail-room .vpw-play-rooms .owl-nav button span,
+.node-hotel #detail-room .vpw-play-promo .owl-nav button span {
+  font-size: 40px;
+  line-height: 25px;
+  font-weight: 100;
+  color: #e8952f;
+}
+.node-hotel #detail-meeting .vpw-play-meeting .owl-nav button:first-child,
+.node-hotel #detail-meeting .vpw-play-meeting .owl-nav button:last-child,
+.node-hotel #detail-wedding .vpw-play-wedding .owl-nav button:first-child,
+.node-hotel #detail-wedding .vpw-play-wedding .owl-nav button:last-child,
+.node-hotel #detail-news .vpw-play-tin-tuc .owl-nav button:first-child,
+.node-hotel #detail-news .vpw-play-tin-tuc .owl-nav button:last-child,
+.node-hotel
+  #detail-entertainment
+  .vpw-play-giai-tri
+  .owl-nav
+  button:first-child,
+.node-hotel #detail-entertainment .vpw-play-giai-tri .owl-nav button:last-child,
+.node-hotel #detail-room .vpw-play-rooms .owl-nav button:first-child,
+.node-hotel #detail-room .vpw-play-rooms .owl-nav button:last-child,
+.node-hotel #detail-room .vpw-play-promo .owl-nav button:first-child,
+.node-hotel #detail-room .vpw-play-promo .owl-nav button:last-child {
+  border: 1px solid #e8952f;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgb(0 0 0/15%);
+  border-radius: 40px;
+  width: 48px;
+  height: 48px;
+}
+.node-hotel #detail-meeting .vpw-play-meeting .owl-nav button:first-child,
+.node-hotel #detail-wedding .vpw-play-wedding .owl-nav button:first-child,
+.node-hotel #detail-news .vpw-play-tin-tuc .owl-nav button:first-child,
+.node-hotel
+  #detail-entertainment
+  .vpw-play-giai-tri
+  .owl-nav
+  button:first-child,
+.node-hotel #detail-room .vpw-play-rooms .owl-nav button:first-child,
+.node-hotel #detail-room .vpw-play-promo .owl-nav button:first-child {
+  left: -24px;
+}
+.node-hotel #detail-room .vpw-play-rooms .owl-nav button:first-child,
+.node-hotel #detail-room .vpw-play-rooms .owl-nav button:last-child,
+.node-hotel #detail-meeting .vpw-play-meeting .owl-nav button:first-child,
+.node-hotel #detail-wedding .vpw-play-wedding .owl-nav button:first-child,
+.node-hotel #detail-meeting .vpw-play-meeting .owl-nav button:last-child,
+.node-hotel #detail-wedding .vpw-play-wedding .owl-nav button:last-child {
+  top: 86px;
+}
+.node-hotel #detail-meeting .vpw-play-meeting .owl-nav button:last-child,
+.node-hotel #detail-wedding .vpw-play-wedding .owl-nav button:last-child,
+.node-hotel #detail-news .vpw-play-tin-tuc .owl-nav button:last-child,
+.node-hotel #detail-entertainment .vpw-play-giai-tri .owl-nav button:last-child,
+.node-hotel #detail-room .vpw-play-rooms .owl-nav button:last-child,
+.node-hotel #detail-room .vpw-play-promo .owl-nav button:last-child {
+  right: -24px;
+}
+.node-hotel #detail-meeting .vpw-play-meeting .vpw-card .card-box-title p,
+.node-hotel #detail-wedding .vpw-play-wedding .vpw-card .card-box-title p,
+.node-hotel #detail-news .vpw-play-tin-tuc .vpw-card .card-box-title p,
+.node-hotel
+  #detail-entertainment
+  .vpw-play-giai-tri
+  .vpw-card
+  .card-box-title
+  p,
+.node-hotel #detail-room .vpw-play-rooms .vpw-card .card-box-title p,
+.node-hotel #detail-room .vpw-play-promo .vpw-card .card-box-title p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  display: block;
+  text-align: left;
+}
+.node-hotel #detail-news .card-box-info,
+.node-hotel #detail-entertainment .card-box-info,
+.node-hotel #detail-room .card-box-info {
+  padding: 12px 16px;
+}
+.node-hotel #detail-meeting .card-box-title,
+.node-hotel #detail-wedding .card-box-title,
+.node-hotel #detail-news .card-box-title,
+.node-hotel #detail-entertainment .card-box-title,
+.node-hotel #detail-room .card-box-title {
+  margin-bottom: 12px;
+}
+.node-hotel #detail-meeting .card-box-title > h3,
+.node-hotel #detail-wedding .card-box-title > h3,
+.node-hotel #detail-news .card-box-title > h3,
+.node-hotel #detail-entertainment .card-box-title > h3,
+.node-hotel #detail-room .card-box-title > h3 {
+  margin-bottom: 10px;
+  line-height: initial;
+}
+.node-hotel #detail-meeting .card-box-title > h3 > a,
+.node-hotel #detail-wedding .card-box-title > h3 > a,
+.node-hotel #detail-news .card-box-title > h3 > a,
+.node-hotel #detail-entertainment .card-box-title > h3,
+.node-hotel #detail-room .card-box-title > h3 {
+  font-size: 20px;
+  font-weight: 600;
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  height: auto;
+}
+.node-hotel #detail-meeting .vpw-play-wedding .room_attr.row > div,
+.node-hotel #detail-wedding .vpw-play-wedding .room_attr.row > div,
+.node-hotel #detail-news .vpw-play-tin-tuc .room_attr.row > div,
+.node-hotel #detail-entertainment .vpw-play-giai-tri .room_attr.row > div,
+.node-hotel #detail-room .vpw-play-uu-dai .room_attr.row > div {
+  width: calc(100% / 6);
+  max-width: unset;
+  flex: none;
+  padding: 14px;
+  height: 52px;
+}
+.node-hotel #detail-meeting .card-box-title > h3,
+.node-hotel #detail-wedding .card-box-title > h3 {
+  font-size: 16px;
+}
+.node-hotel #detail-entertainment .card-box-title > h3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+.node-hotel #detail-news .card-box-title > h3 > a {
+  white-space: normal;
+  font-size: 16px;
+  display: inline-block;
+  word-break: normal;
+  height: 65px;
+  text-align: justify;
+}
+.node-hotel .vpw-play-tien-ich.mobile {
+  display: none;
+}
+.node-hotel .vpw-play-tien-ich {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: normal;
+}
+.node-hotel .vpw-play-tien-ich .utility-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  height: 120px;
+  border: 1px solid #ced4da;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.node-hotel .vpw-play-tien-ich .utility-box-wrapper {
+  padding-bottom: 30px;
+  height: auto;
+}
+.node-hotel .vpw-play-tien-ich .utility-box .utility-row {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+}
+.node-hotel .vpw-play-tien-ich .utility-box .utility-ico {
+  max-width: unset;
+}
+.node-hotel .vpw-play-tien-ich .utility-box .utility-info {
+  padding: 10px 0 0;
+}
+.node-hotel .vpw-play-tien-ich .utility-box .utility-img {
+  padding: 0;
+  text-align: center;
+}
+.node-hotel .vpw-play-tien-ich .utility-box .utility-info p.heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+}
+.node-hotel #detail-spa .btn-primary {
+  color: #fff;
+  text-transform: none;
+}
+.node-hotel #detail-spa .spa-img-wrapper,
+.node-hotel #detail-spa .content-font {
+  padding: 0;
+}
+.node-hotel #detail-spa .content-font > p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-align: justify;
+}
+.node-hotel #detail-spa .spa-img {
+  overflow: hidden;
+  height: 320px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+.node-hotel #detail-spa .btn-block {
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #e8952f;
+  border-radius: 4px;
+  text-transform: none;
+}
+.node-hotel #detail-about .more-detail {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+}
+.node-hotel #detail-about .more-detail * {
+  margin: 0;
+}
+.node-hotel #detail-about .area-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 18px 24px;
+  border: 1px solid #e8952f;
+  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(69, 69, 127, 0.1);
+  border-radius: 4px;
+  height: 100px;
+}
+.node-hotel #detail-about .area-detail .dien-tich-detail,
+.node-hotel #detail-about .area-detail .so-phong-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.node-hotel #detail-about .area-detail .so-phong-detail {
+  padding-top: 10px;
+  border-top: 1px solid #e5e5e5;
+}
+.node-hotel #detail-about .area-detail .dien-tich-icon,
+.node-hotel #detail-about .area-detail .so-phong-icon {
+  margin-right: 5px;
+}
+.node-hotel #detail-about .area-detail .dien-tich-value,
+.node-hotel #detail-about .area-detail .so-phong-value {
+  font-weight: 700;
+  color: #e8952f;
+  margin-left: 5px;
+}
+.node-hotel #detail-room .btn-block {
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #e8952f;
+  border-radius: 4px;
+  margin: 0 0 30px;
+  width: 201px;
+  text-transform: none;
+}
+.node-hotel #detail-room .btn-block {
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #e8952f;
+  border-radius: 4px;
+  margin: 0 0 30px;
+  width: 201px;
+  text-transform: none;
+}
+.node-hotel #detail-room .lien-he-ks-wrapper {
+  margin-bottom: 0;
+}
+.node-hotel #detail-room .btn-block.lien-he-ks {
+  height: 24px;
+  width: 184px;
+  font-size: 12px;
+}
+.node-hotel #detail-room .btn-block .dat-phong-icon {
+  margin-left: 5px;
+}
+.node-hotel #detail-room .vpw-play-rooms .vpw-card .dien-tich-icon,
+.node-hotel #detail-room .vpw-play-promo .vpw-card .dien-tich-icon {
+  margin-right: 10px;
+}
+.node-hotel #detail-room .vpw-play-rooms .vpw-card .hotel-people-icon,
+.node-hotel #detail-room .vpw-play-promo .vpw-card .hotel-people-icon {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.node-hotel #detail-room .vpw-play-rooms .vpw-card .gia-phong span.price span,
+.node-hotel #detail-room .vpw-play-promo .vpw-card .gia-phong span.price span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #e8952f;
+  margin: 0 4px;
+  line-height: 23px;
+  border-bottom: none;
+}
+.node-hotel #detail-room .vpw-play-rooms .vpw-card .gia-phong span.chi-tu,
+.node-hotel #detail-room .vpw-play-promo .vpw-card .gia-phong span.chi-tu {
+  font-weight: 400;
+  font-size: 12px;
+}
+.node-hotel #detail-news .vpw-play-tin-tuc .vpw-card img {
+  height: 200px;
+}
+.node-hotel #detail-wedding .vpw-play-wedding .vpw-card .card-box-title p,
+.node-hotel
+  #detail-entertainment
+  .vpw-play-giai-tri
+  .vpw-card
+  .card-box-title
+  p {
+  font-size: 14px;
+  border-bottom: none;
+}
+.node-hotel #detail-entertainment .vpw-play-giai-tri div.distance-dot {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(4px);
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+}
+.node-hotel #detail-utility .tit-box {
+  font-size: 28px !important;
+}
+.node-hotel #detail-entertainment .card-box-img img {
+  height: 240px;
+}
+.node-hotel #detail-wedding .card-box-img img {
+  height: 218px;
+}
+.node-hotel
+  #tab-room
+  .room-listing-block
+  .vp-card-promotion
+  .img_wrapper
+  a::before {
+  content: "";
+  width: 28px;
+  height: 30px;
+  background-image: url(../img/icon-img.svg);
+  position: absolute;
+  background-size: contain;
+  bottom: 17.5px;
+  left: 16px;
+  background-repeat: no-repeat;
+}
+.node-hotel #detail-entertainment .vpw-card {
+  height: 396px;
+}
+.node-hotel #detail-favour .info-wrapper {
+  margin-top: 0;
+  height: 135px;
+}
+.node-hotel #detail-favour .info-wrapper h3.title-item {
+  height: 43px;
+}
+.node-hotel #detail-favour .btn-wrapper > div.swiper-button-prev {
+  left: -24px;
+  top: -64px;
+  border: 1px solid #e8952f;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgb(0 0 0/15%);
+  border-radius: 40px;
+  width: 48px;
+  height: 48px;
+  opacity: 1;
+  font-weight: 100;
+}
+.node-hotel #detail-favour .btn-wrapper > div.swiper-button-prev:after {
+  color: #e8952f;
+  content: "‹";
+  font-family: montserrat;
+  font-size: 40px;
+  position: relative;
+  top: -2px;
+  left: -1px;
+}
+.node-hotel #detail-favour .btn-wrapper > div.swiper-button-next {
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  right: -24px;
+  top: -64px;
+  opacity: 1;
+  border: 1px solid #e8952f;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgb(0 0 0/15%);
+  border-radius: 40px;
+  font-weight: 100;
+}
+.node-hotel #detail-favour .btn-wrapper > div.swiper-button-next:after {
+  color: #e8952f;
+  content: "›";
+  font-family: montserrat;
+  font-size: 40px;
+  position: relative;
+  top: -2px;
+  left: -1px;
+}
+.node-hotel #detail-favour .btn-wrapper > div.swiper-button-next:after {
+}
+.node-hotel #detail-news .view-more,
+.node-hotel #detail-room .view-more,
+.node-hotel #detail-entertainment .view-more {
+  padding-top: 0;
+}
+.node-hotel #detail-am-thuc .res-block-right .res-content {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+}
+.node-hotel
+  #detail-entertainment
+  .vpw-play-giai-tri
+  .vpw-card
+  .card-box-title
+  p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.node-hotel #detail-room .vpw-play-rooms.owl-drag {
+  touch-action: manipulation;
+}
+.node-hotel #detail-room .num-slide-mobile {
+  display: none;
+  text-align: center;
+  margin-top: 10px;
+  color: #e8952f;
+}
+.node-hotel #detail-room .num-slide-mobile .right-icon-arrow {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/icon-arrow-right.svg);
+  display: inline-block;
+  bottom: -11px;
+  right: -16px;
+}
+.node-hotel #detail-room .num-slide-mobile .left-icon-arrow {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/icon-arrow-left.svg);
+  position: relative;
+  display: inline-block;
+  left: -16px;
+  bottom: -11px;
+}
+.node-hotel #detail-room .num-slide-mobile .left-icon-arrow:hover {
+  background-image: url(../img/icon-arrow-left-bold.svg);
+}
+.node-hotel #detail-room .num-slide-mobile .right-icon-arrow:hover {
+  background-image: url(../img/icon-arrow-right-bold.svg);
+}
+.node-hotel #detail-restaurent h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  color: #343a40;
+}
+.node-hotel #detail-restaurent .short-description-excerpt {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-align: justify;
+}
+.node-hotel #detail-restaurent .restaurant-img-wrapper {
+  margin-bottom: 0;
+}
+.node-hotel #detail-restaurent .restaurant-img-wrapper-mobile {
+  display: none;
+  margin-top: 30px;
+}
+.node-hotel #detail-restaurent .restaurant-content-wrapper {
+  padding-left: 0;
+  padding-right: 30px;
+  text-align: justify;
+}
+.node-hotel #detail-restaurent .restaurant-content-wrapper img.ico {
+  margin-right: 5px;
+  margin-bottom: 6px;
+}
+.node-hotel #detail-restaurent img.restaurant-image {
+  border-radius: 4px;
+  object-fit: cover;
+}
+.node-hotel #detail-restaurent .restaurant-img-wrapper-mobile a::before {
+  content: "";
+  width: 28px;
+  height: 30px;
+  background-image: url(../img/icon-img.svg);
+  position: absolute;
+  background-size: contain;
+  bottom: 22.5px;
+  left: 16px;
+  background-repeat: no-repeat;
+}
+.node-hotel #detail-restaurent .restaurant-img-wrapper a .gallery-ico {
+  position: relative;
+  bottom: 27px;
+  left: 10px;
+  width: 28px;
+  height: 30px;
+}
+.node-hotel #detail-restaurent .restaurant-content-wrapper .thuc-don-btn a {
+  text-transform: none;
+  font-size: 16px;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+  color: #fff;
+}
+.node-hotel #detail-restaurent .restaurant-content-wrapper .menu-btn-mobile {
+  display: none;
+}
+.node-hotel
+  #detail-restaurent
+  .restaurant-content-wrapper
+  .thuc-don-btn.mobile {
+  margin-right: 15px;
+}
+.node-hotel
+  #detail-restaurent
+  .restaurant-content-wrapper
+  .thuc-don-btn.mobile
+  a {
+  text-transform: none;
+  font-size: 16px;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+  color: #fff;
+  width: 180px;
+}
+.node-hotel #detail-restaurent .restaurant-content-wrapper .hot-line-btn a {
+  border: 0.5px solid #343a40;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #343a40;
+  background-color: #fff;
+  width: 180px;
+}
+.node-hotel
+  #detail-restaurent
+  .restaurant-content-wrapper
+  .hot-line-btn
+  a
+  .ico {
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+.node-hotel #detail-wedding h1 {
+  font-weight: 600;
+}
+.node-hotel #detail-wedding p.short-description-excerpt {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-align: justify;
+}
+.node-hotel #detail-wedding .yeu-cau-bao-gia-btn button.send-price-request {
+  text-transform: none;
+  font-size: 16px;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+  color: #fff;
+}
+.node-hotel #detail-wedding .price-request-wrapper-mobile {
+  display: none;
+}
+.node-hotel #detail-wedding .vpw-card {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.node-hotel #detail-wedding .card-box-info {
+  padding: 12px 0;
+}
+.node-hotel #detail-wedding .wedding-room-listing-block .item-list ul li {
+  margin: 0;
+  padding: 10px;
+  list-style-type: none;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  > .vp-card-promotion {
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #d5d5d5;
+  overflow: hidden;
+  margin-bottom: 24px !important;
+  box-shadow: none;
+}
+@media (max-width: 768px) {
+  .node-hotel
+    #detail-wedding
+    .wedding-room-listing-block
+    .node-teaser.node-teaser-hotel
+    > .vp-card-promotion {
+    margin-bottom: 16px !important;
+  }
+  .node-hotel
+    #detail-wedding
+    .wedding-room-listing-block
+    .node-teaser.node-teaser-hotel
+    .info_wrapper {
+    padding-top: 16px !important;
+  }
+}
+.node-hotel
+  #detail-wedding
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  .heading-wrapper
+  h3 {
+  text-align: justify;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  table
+  p {
+  margin: 0;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .img_wrapper {
+  padding-left: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  max-height: 291px;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .img_wrapper
+  img {
+  border-radius: 5px;
+  height: 271px;
+  text-align: justify;
+}
+@media (max-width: 768px) {
+  .node-hotel
+    #detail-wedding
+    .wedding-room-listing-block
+    .node-teaser.node-teaser-hotel
+    .img_wrapper
+    img {
+    border-radius: 5px;
+    height: 334px;
+    text-align: justify;
+  }
+  .node-hotel
+    #detail-wedding
+    .wedding-room-listing-block
+    .node-teaser.node-teaser-hotel
+    .img_wrapper {
+    max-height: 350px;
+  }
+}
+.node-hotel
+  #detail-wedding
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  p.room-main-des {
+  margin-bottom: 16px !important;
+  display: flex;
+  height: 80px;
+  overflow: hidden;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  p.room-main-des.show {
+  overflow: visible;
+  height: auto;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  p.room-main-des
+  .dien-tich,
+.node-hotel
+  #detail-wedding
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  p.room-main-des
+  .des,
+.node-hotel
+  #detail-wedding
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  p.room-main-des
+  img {
+  margin-right: 5px;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  span.dien-tich {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  padding-top: 0;
+  margin-left: 3px;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  .wedding-view-more-arrow:after {
+  color: #e29a38;
+  border-bottom: 0;
+  border-top: 0.3em solid;
+  border-right: 0.25em solid transparent;
+  border-left: 0.25em solid transparent;
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  .view-more-arrow-fix:after {
+  color: #e29a38;
+  border-bottom: 0.3em solid !important;
+  border-top: 0 !important;
+  border-right: 0.25em solid transparent;
+  border-left: 0.25em solid transparent;
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  .wedding-view-more-arrow,
+.node-hotel
+  #detail-wedding
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  .view-more-arrow-fix {
+  position: relative;
+  padding-right: 15px;
+  font-size: 14px;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-room-listing-block
+  .node-teaser
+  .utility-table {
+  width: auto;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-room-listing-block
+  .node-teaser
+  .utility-table
+  tr
+  td,
+.node-hotel
+  #detail-meeting
+  .wedding-room-listing-block
+  .node-teaser
+  .utility-table
+  tr
+  td {
+  width: 74px !important;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-room-listing-block
+  .node-teaser
+  .utility-table
+  tr
+  th,
+.node-hotel
+  #detail-meeting
+  .wedding-room-listing-block
+  .node-teaser
+  .utility-table
+  tr
+  th {
+  width: 87px !important;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-room-listing-block
+  .node-teaser
+  .utility-table.mobile {
+  display: none;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-room-listing-block
+  .node-teaser
+  .utility-table
+  th,
+.node-hotel
+  #detail-wedding
+  .wedding-room-listing-block
+  .node-teaser
+  .utility-table
+  td {
+  padding: 5px;
+}
+.node-hotel #detail-wedding .wedding-room-listing-block .img_wrapper a::before {
+  content: "";
+  width: 28px;
+  height: 30px;
+  background-image: url(../img/icon-img.svg);
+  position: absolute;
+  background-size: contain;
+  bottom: 17.5px !important;
+  left: 40px !important;
+  background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  .node-hotel
+    #detail-wedding
+    .wedding-room-listing-block
+    .img_wrapper
+    a::before {
+    left: 16px !important;
+  }
+}
+.node-hotel #detail-wedding ul#weddingnav-tab {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px;
+  background: #f7f7f7;
+  border-radius: 4px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  border-bottom-color: #f7f7f7;
+}
+.node-hotel #detail-wedding ul#weddingnav-tab .nav-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #616971;
+  border-width: 0;
+  height: 100% !important;
+}
+.node-hotel #detail-wedding ul#weddingnav-tab li.nav-item.active a.nav-link {
+  font-style: normal;
+  font-weight: 700;
+  color: #e8952f;
+}
+.node-hotel #detail-wedding ul#weddingnav-tab li.nav-item.active a.nav-link,
+.node-hotel #detail-wedding ul#weddingnav-tab li.nav-item .nav-link:hover,
+.node-hotel #detail-wedding ul#weddingnav-tab li.nav-item:hover .nav-link {
+  border-color: #f7f7f7;
+  border-bottom: none;
+  height: 100% !important;
+  border-width: 0 !important;
+  background: #ffff;
+}
+.node-hotel #detail-wedding ul#weddingnav-tab li.nav-item,
+.node-hotel #detail-wedding ul#weddingnav-tab li.nav-item.active {
+  border-bottom: none !important;
+}
+.node-hotel #detail-wedding .wedding-service-listing-block .item-list ul li {
+  margin: 0;
+  padding: 10px;
+  list-style-type: none;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .node-teaser
+  > .vp-card-promotion {
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  overflow: hidden;
+  margin-bottom: 24px !important;
+  box-shadow: none;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper {
+  padding-left: 20px;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 24px;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #212529;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  .service-title {
+  display: block;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  .service-title
+  .badge {
+  border: 0.5px solid #717171;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color: #717171;
+  margin: 0 6px;
+  position: relative;
+  top: -4px;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  .chi-tu {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #343a40;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  .price {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #e8952f;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .node-teaser
+  .img_wrapper {
+  margin-bottom: 30px;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .node-hotel
+    #detail-wedding
+    .wedding-service-listing-block
+    .node-teaser
+    .img_wrapper {
+    margin-bottom: 16px;
+    height: 334px;
+  }
+}
+.node-hotel #detail-wedding .wedding-service-listing-block .menu_wrapper {
+  padding-left: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  max-height: 271px;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .menu_wrapper
+  .service-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0 0 24px;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .menu_wrapper
+  .service-menu
+  li {
+  list-style: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 0 0 3px;
+  color: #616971;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .menu_wrapper
+  .service-menu
+  li
+  a {
+  color: #616971;
+  margin-left: 0;
+  display: block;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .menu_wrapper
+  .service-menu
+  li
+  a
+  p.package-title {
+  padding-left: 25px;
+  padding-right: 20px;
+  top: -19px;
+  position: relative;
+  margin-bottom: 0;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .menu_wrapper
+  .service-menu
+  li:first-child {
+  margin: 0;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .menu_wrapper
+  .service-menu
+  li
+  a:hover
+  p.package-title,
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .menu_wrapper
+  .service-menu
+  li
+  a.active
+  p.package-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #e8952f;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .menu_wrapper
+  .service-menu
+  li
+  a.active
+  p.package-title,
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .menu_wrapper
+  .service-menu
+  li
+  a:hover
+  p.package-title {
+  color: #e8952f;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .menu_wrapper
+  .service-menu
+  li
+  a
+  span.line-icon::before {
+  border-bottom: 2px solid #fff;
+  margin: 0;
+  content: " ";
+  width: 165px;
+  padding: 0 0 0 20px;
+  position: relative;
+  top: -9px;
+  right: 0;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .menu_wrapper
+  .service-menu
+  li
+  a:hover
+  span.line-icon::before,
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .menu_wrapper
+  .service-menu
+  li
+  a.active
+  span.line-icon::before {
+  border-bottom: 2px solid #e8952f;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  h5 {
+  text-transform: unset !important;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  margin-bottom: 17px;
+  width: 456px;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .node-teaser
+  .img_wrapper
+  img {
+  border-radius: 5px;
+  height: 378px;
+}
+@media (max-width: 768px) {
+  .node-hotel
+    #detail-wedding
+    .wedding-service-listing-block
+    .node-teaser
+    .img_wrapper
+    img {
+    height: 334px;
+  }
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  div.room-main-des {
+  margin-bottom: 16px !important;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 11;
+  -webkit-box-orient: vertical;
+  text-align: justify;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  .room-main-des.show {
+  overflow: visible;
+  height: auto;
+  max-height: none;
+  display: block;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  p.room-main-des
+  .dien-tich,
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  p.room-main-des
+  .des,
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  p.room-main-des
+  img {
+  margin-right: 5px;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  span.dien-tich {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  .wedding-view-more-arrow:after {
+  color: #e29a38;
+  border-bottom: 0;
+  border-top: 0.3em solid;
+  border-right: 0.25em solid transparent;
+  border-left: 0.25em solid transparent;
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  .view-more-arrow-fix:after {
+  color: #e29a38;
+  border-bottom: 0.3em solid !important;
+  border-top: 0 !important;
+  border-right: 0.25em solid transparent;
+  border-left: 0.25em solid transparent;
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  .wedding-view-more-arrow,
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  .view-more-arrow-fix {
+  position: relative;
+  padding-right: 15px;
+  font-size: 14px;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .node-teaser
+  .img_wrapper
+  div.sale-dot {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  background: #e29a38;
+  color: #fff;
+  backdrop-filter: blur(4px);
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .node-teaser
+  .img_wrapper
+  div.sale-dot
+  span {
+  font-size: 12px;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .img_wrapper
+  a::before {
+  content: "";
+  width: 28px;
+  height: 30px;
+  background-image: url(../img/icon-img.svg);
+  position: absolute;
+  background-size: contain;
+  bottom: 16px;
+  left: 17.5px;
+  background-repeat: no-repeat;
+}
+.node-hotel
+  #detail-wedding
+  .vpw-play-wedding
+  .vpw-card
+  .card-box-title
+  p.short-description-excerpt {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+.node-hotel #detail-wedding .card-box-title > h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.node-hotel #detail-meeting h1 {
+  font-weight: 600;
+}
+.node-hotel #detail-meeting p.short-description-excerpt {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-align: justify;
+}
+.node-hotel #detail-meeting .yeu-cau-bao-gia-btn button.send-price-request {
+  text-transform: none;
+  font-size: 16px;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+  color: #fff;
+  width: 164px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  white-space: nowrap;
+  padding: 0 !important;
+}
+.node-hotel #detail-meeting .price-request-wrapper-mobile {
+  display: none;
+}
+.node-hotel #detail-meeting .card-box-info {
+  padding: 12px 0;
+}
+.node-hotel #detail-meeting .vpw-card {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.node-hotel #detail-meeting .wedding-room-listing-block .item-list ul li {
+  margin: 0;
+  padding: 10px;
+  list-style-type: none;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  > .vp-card-promotion {
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #d5d5d5;
+  overflow: hidden;
+  margin-bottom: 24px !important;
+  box-shadow: none;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+@media (max-width: 768px) {
+  .node-hotel
+    #detail-meeting
+    .wedding-room-listing-block
+    .node-teaser.node-teaser-hotel
+    > .vp-card-promotion {
+    margin-bottom: 16px !important;
+  }
+  .node-hotel
+    #detail-meeting
+    .wedding-room-listing-block
+    .node-teaser.node-teaser-hotel
+    .info_wrapper {
+    padding-top: 16px;
+  }
+}
+.node-hotel
+  #detail-meeting
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  h3 {
+  float: left;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  table
+  p {
+  margin: 0;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .img_wrapper {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  max-height: 291px;
+  margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .node-hotel
+    #detail-meeting
+    .wedding-room-listing-block
+    .node-teaser.node-teaser-hotel
+    .img_wrapper {
+    margin-bottom: 0;
+  }
+}
+.node-hotel
+  #detail-meeting
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .img_wrapper
+  img {
+  border-radius: 5px;
+  height: 271px;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  p.room-main-des {
+  margin-bottom: 16px !important;
+  display: flex;
+  height: 80px;
+  overflow: hidden;
+  text-align: justify;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  p.room-main-des.show {
+  overflow: visible;
+  height: auto;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  p.room-main-des
+  .dien-tich,
+.node-hotel
+  #detail-meeting
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  p.room-main-des
+  .des,
+.node-hotel
+  #detail-meeting
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  p.room-main-des
+  img {
+  margin-right: 5px;
+}
+.node-hotel .info_wrapper span.between {
+  display: block;
+  margin: 0 19px;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  .wedding-view-more-arrow:after {
+  color: #e29a38;
+  border-bottom: 0;
+  border-top: 0.3em solid;
+  border-right: 0.25em solid transparent;
+  border-left: 0.25em solid transparent;
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  .view-more-arrow-fix:after {
+  color: #e29a38;
+  border-bottom: 0.3em solid !important;
+  border-top: 0 !important;
+  border-right: 0.25em solid transparent;
+  border-left: 0.25em solid transparent;
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  .wedding-view-more-arrow,
+.node-hotel
+  #detail-meeting
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  .view-more-arrow-fix {
+  position: relative;
+  padding-right: 15px;
+  font-size: 14px;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-room-listing-block
+  .node-teaser
+  .utility-table {
+  width: auto;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-room-listing-block
+  .node-teaser
+  .utility-table.mobile {
+  display: none;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-room-listing-block
+  .node-teaser
+  .utility-table
+  th,
+.node-hotel
+  #detail-meeting
+  .wedding-room-listing-block
+  .node-teaser
+  .utility-table
+  td {
+  padding: 5px;
+}
+.node-hotel #detail-meeting .wedding-room-listing-block .img_wrapper a::before {
+  content: "";
+  width: 28px;
+  height: 30px;
+  background-image: url(../img/icon-img.svg);
+  position: absolute;
+  background-size: contain;
+  bottom: 14.5px;
+  left: 34px;
+  background-repeat: no-repeat;
+}
+.node-hotel #detail-meeting ul#weddingnav-tab {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px;
+  background: #f7f7f7;
+  border-radius: 4px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  border-bottom-color: #f7f7f7;
+}
+.node-hotel #detail-meeting ul#weddingnav-tab .nav-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #616971;
+  border-width: 0;
+  height: 100% !important;
+  border-bottom: none;
+}
+.node-hotel #detail-meeting ul#weddingnav-tab li.nav-item,
+.node-hotel #detail-meeting ul#weddingnav-tab li.nav-item.active {
+  border-bottom: none !important;
+}
+.node-hotel #detail-meeting ul#weddingnav-tab li.nav-item.active a.nav-link {
+  font-style: normal;
+  font-weight: 700;
+  color: #e8952f;
+  border-bottom: none;
+}
+.node-hotel #detail-meeting ul#weddingnav-tab li.nav-item.active a.nav-link,
+.node-hotel #detail-meeting ul#weddingnav-tab li.nav-item .nav-link:hover,
+.node-hotel #detail-meeting ul#weddingnav-tab li.nav-item:hover .nav-link {
+  border-color: #f7f7f7;
+  border-bottom: none;
+  height: 100% !important;
+  border-width: 0 !important;
+  background: #fff;
+}
+.node-hotel #detail-meeting .wedding-service-listing-block .item-list ul li,
+.node-hotel #detail-wedding .wedding-service-listing-block .item-list ul li {
+  padding: 10px;
+  list-style-type: disc;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .node-teaser
+  > .vp-card-promotion {
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  overflow: hidden;
+  margin-bottom: 24px !important;
+  box-shadow: none;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper {
+  padding-left: 20px;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 24px;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #212529;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  .service-title {
+  display: block;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  .service-title
+  .badge {
+  border: 0.5px solid #717171;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color: #717171;
+  margin: 0 6px;
+  position: relative;
+  top: -4px;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  .chi-tu {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #343a40;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  .price {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #e8952f;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .node-teaser
+  .img_wrapper {
+  margin-bottom: 30px;
+  height: 100%;
+}
+.node-hotel #detail-meeting .wedding-service-listing-block .menu_wrapper {
+  padding-left: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  max-height: 271px;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .menu_wrapper
+  .service-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0 0 24px;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .menu_wrapper
+  .service-menu
+  li {
+  list-style: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 0 0 3px;
+  color: #616971;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .menu_wrapper
+  .service-menu
+  li
+  a {
+  color: #616971;
+  margin-left: 0;
+  display: block;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .menu_wrapper
+  .service-menu
+  li
+  a
+  p.package-title {
+  padding-left: 25px;
+  padding-right: 20px;
+  top: -19px;
+  position: relative;
+  margin-bottom: 0;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .menu_wrapper
+  .service-menu
+  li:first-child {
+  margin: 0;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .menu_wrapper
+  .service-menu
+  li
+  a:hover
+  p.package-title,
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .menu_wrapper
+  .service-menu
+  li
+  a.active
+  p.package-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #e8952f;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .menu_wrapper
+  .service-menu
+  li
+  a.active
+  p.package-title,
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .menu_wrapper
+  .service-menu
+  li
+  a:hover
+  p.package-title {
+  color: #e8952f;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .menu_wrapper
+  .service-menu
+  li
+  a
+  span.line-icon::before {
+  border-bottom: 2px solid #fff;
+  margin: 0;
+  content: " ";
+  width: 165px;
+  padding: 0 0 0 20px;
+  position: relative;
+  top: -9px;
+  right: 0;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .menu_wrapper
+  .service-menu
+  li
+  a:hover
+  span.line-icon::before,
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .menu_wrapper
+  .service-menu
+  li
+  a.active
+  span.line-icon::before {
+  border-bottom: 2px solid #e8952f;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  h5 {
+  text-transform: unset !important;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  margin-bottom: 17px;
+  width: 456px;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .node-teaser
+  .img_wrapper
+  img {
+  border-radius: 5px;
+  height: 378px;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  div.room-main-des {
+  margin-bottom: 16px !important;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 11;
+  -webkit-box-orient: vertical;
+  text-align: justify;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  .room-main-des.show {
+  overflow: visible;
+  height: auto;
+  max-height: none;
+  display: block;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  p.room-main-des
+  .dien-tich,
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  p.room-main-des
+  .des,
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  p.room-main-des
+  img {
+  margin-right: 5px;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  span.dien-tich {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  .wedding-view-more-arrow:after {
+  color: #e29a38;
+  border-bottom: 0;
+  border-top: 0.3em solid;
+  border-right: 0.25em solid transparent;
+  border-left: 0.25em solid transparent;
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  .wedding-view-more-arrow {
+  position: relative;
+  padding-right: 15px;
+  font-size: 14px;
+  color: #f39f2d;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .node-teaser
+  .img_wrapper
+  div.sale-dot {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  background: #e29a38;
+  color: #fff;
+  backdrop-filter: blur(4px);
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .node-teaser
+  .img_wrapper
+  div.sale-dot
+  span {
+  font-size: 12px;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .node-teaser
+  .img_wrapper
+  a:before {
+  content: "";
+  width: 28px;
+  height: 30px;
+  background-image: url(../img/icon-img.svg);
+  position: absolute;
+  background-size: contain;
+  bottom: 6px;
+  left: 13px;
+  background-repeat: no-repeat;
+  text-align: justify;
+}
+.node-hotel
+  #detail-meeting
+  .vpw-play-meeting
+  .vpw-card
+  .card-box-title
+  p.short-description-excerpt {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+.node-hotel #detail-meeting .card-box-title > h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.node-hotel .wedding-service-listing-block .service-menu-mobile {
+  display: none;
+  width: 100%;
+  text-align: left;
+  margin: 0 0 24px;
+}
+.node-hotel .wedding-service-listing-block .service-menu-mobile .list-4 {
+  -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+  z-index: 10;
+}
+.node-hotel
+  .wedding-service-listing-block
+  .service-menu-mobile
+  #drop-4:checked
+  ~ .list-4 {
+  display: block;
+  opacity: 2;
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.node-hotel .wedding-service-listing-block .service-menu-mobile label {
+  width: 100%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  -webkit-transition: 0.04s ease-in-out;
+  transition: 0.04s ease-in-out;
+  color: #f39f2d;
+  margin-bottom: 0;
+}
+.node-hotel .wedding-service-listing-block .service-menu-mobile label::after {
+  content: url(../img/icon-stick-arrow-down.svg);
+  position: absolute;
+  right: 10px;
+  bottom: 18px;
+}
+.node-hotel
+  .wedding-service-listing-block
+  .service-menu-mobile
+  #drop-4:checked
+  ~ label::after {
+  content: url(../img/icon-stick-arrow-up.svg);
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+.node-hotel .wedding-service-listing-block .service-menu-mobile .list {
+  width: 100%;
+  position: inherit;
+  z-index: 1;
+  top: 45px;
+  left: 0;
+  border-top: none;
+  display: none;
+  opacity: 0;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.node-hotel .wedding-service-listing-block .service-menu-mobile .list .item {
+  width: 100%;
+  padding-left: 0;
+  background-color: #fff;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 0;
+  color: #616971;
+}
+.node-hotel .wedding-service-listing-block .service-menu-mobile .list .item a {
+  color: #616971;
+}
+.node-hotel
+  .wedding-service-listing-block
+  .service-menu-mobile
+  .list
+  .item
+  a:active {
+  color: #f39f2d;
+}
+.node-hotel .service-menu-mobile .item:hover {
+  background-color: #eee;
+}
+.node-hotel #detail-rooms .short-description-excerpt {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+  color: #222;
+}
+.node-hotel #detail-rooms .vpw-play-room-attr.mobile {
+  display: none;
+}
+.node-hotel #detail-rooms .detail-room-heading-wrapper h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  color: #343a40;
+}
+@media only screen and (min-width: 1200px) {
+  .node-hotel #detail-restaurent .restaurant-img-wrapper {
+    width: 540px;
+    flex: unset;
+    height: 278px;
+  }
+  .node-hotel #detail-restaurent .restaurant-content-wrapper {
+    width: 540px;
+    max-width: 100%;
+    flex: unset;
+    padding: 0 !important;
+  }
+  .row-hotel > .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .node-hotel
+    #detail-restaurent
+    .restaurant-content-wrapper
+    > .row:nth-child(2) {
+    margin-bottom: 14px !important;
+  }
+  .node-hotel
+    #detail-restaurent
+    .restaurant-content-wrapper
+    > .row:nth-child(2)
+    > .col-md-6
+    > .font-weight-bold {
+    margin-bottom: 4px !important;
+  }
+  .node-full.node-hotel .row.hotline-row .col-md-6:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .node-hotel
+    #detail-restaurent
+    .restaurant-content-wrapper.row-second-restaurant {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .node-hotel .main-nav-tabs {
+    display: none !important;
+  }
+  .node-hotel .vpw-play-tien-ich .utility-box .utility-img {
+    width: 40%;
+  }
+  .node-hotel .vpw-play-tien-ich .utility-box .utility-info {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 462px) {
+  .node-hotel .owl-dots {
+    display: block;
+  }
+  .node-hotel .menu-tabs-mobile {
+    display: block;
+    padding-bottom: 40px;
+  }
+  .node-hotel #detail-restaurent .short-description-excerpt {
+    display: none;
+  }
+  .node-hotel #detail-restaurent .restaurant-content-wrapper {
+    padding: 0;
+  }
+  .node-hotel #detail-restaurent .restaurant-content-wrapper .menu-btn-mobile {
+    display: block;
+  }
+  .node-hotel #detail-restaurent .heading-wrapper {
+    display: none;
+  }
+  .node-hotel #detail-restaurent .short-description-wrapper {
+    display: none;
+  }
+  .node-hotel #detail-restaurent .restaurant-content-wrapper .hotline-row {
+    display: none;
+  }
+  .node-hotel #detail-restaurent .restaurant-img-wrapper-mobile {
+    display: block;
+    margin-top: 32px;
+  }
+  .node-hotel #detail-restaurent .restaurant-img-wrapper {
+    display: none;
+  }
+  .node-hotel #detail-restaurent .division {
+    margin-bottom: 48px !important;
+    margin-top: 48px;
+  }
+  .node-hotel #detail-restaurent .division hr {
+    margin: 0;
+  }
+  .node-hotel
+    #detail-restaurent
+    .restaurant-content-wrapper
+    .menu-btn-mobile
+    > div {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+  .node-hotel #detail-restaurent .restaurant-content-wrapper .hot-line-btn a,
+  .node-hotel
+    #detail-restaurent
+    .restaurant-content-wrapper
+    .thuc-don-btn.mobile
+    a {
+    width: 100%;
+    height: 42px;
+    margin-top: 16px;
+  }
+  .node-hotel
+    #detail-meeting
+    .wedding-service-listing-block
+    .menu_wrapper
+    .service-menu
+    li:hover::before,
+  .node-hotel
+    #detail-meeting
+    .wedding-service-listing-block
+    .menu_wrapper
+    .service-menu
+    li.active::before {
+    border-bottom: 2px solid #fff;
+  }
+  .node-hotel
+    #detail-wedding
+    .wedding-service-listing-block
+    .menu_wrapper
+    .service-menu
+    li:hover::before,
+  .node-hotel
+    #detail-wedding
+    .wedding-service-listing-block
+    .menu_wrapper
+    .service-menu
+    li.active::before {
+    border-bottom: 2px solid #fff;
+  }
+  .node-hotel
+    #detail-meeting
+    .wedding-service-listing-block
+    .service-menu-mobile,
+  .node-hotel
+    #detail-wedding
+    .wedding-service-listing-block
+    .service-menu-mobile {
+    display: inline-block;
+  }
+  .node-hotel
+    #detail-meeting
+    .wedding-service-listing-block
+    .menu_wrapper
+    .service-menu,
+  .node-hotel
+    #detail-wedding
+    .wedding-service-listing-block
+    .menu_wrapper
+    .service-menu {
+    display: none;
+  }
+  .node-hotel
+    #detail-meeting
+    .wedding-room-listing-block
+    .node-teaser.node-teaser-hotel
+    .img_wrapper,
+  .node-hotel
+    #detail-wedding
+    .wedding-room-listing-block
+    .node-teaser.node-teaser-hotel
+    .img_wrapper {
+    padding: 0;
+  }
+  .node-hotel .vp-booking-form-top {
+    display: none;
+  }
+  .node-hotel #detail-wedding .price-request-wrapper,
+  .node-hotel #detail-meeting .price-request-wrapper {
+    display: none;
+  }
+  .node-hotel #detail-wedding .price-request-wrapper-mobile,
+  .node-hotel #detail-meeting .price-request-wrapper-mobile {
+    display: block;
+  }
+  .node-hotel
+    #detail-wedding
+    .price-request-wrapper-mobile
+    button.send-price-request,
+  .node-hotel
+    #detail-meeting
+    .price-request-wrapper-mobile
+    button.send-price-request {
+    width: 240px;
+  }
+  .node-hotel #detail-wedding .short-description-wrapper .short-description {
+    margin-bottom: 0 !important;
+  }
+  .node-hotel
+    #detail-wedding
+    .short-description-wrapper
+    p.short-description-excerpt {
+    -webkit-line-clamp: 13;
+  }
+  .node-hotel #detail-meeting .vpw-play-meeting .owl-nav button:first-child,
+  .node-hotel #detail-wedding .vpw-play-wedding .owl-nav button:first-child,
+  .node-hotel #detail-news .vpw-play-tin-tuc .owl-nav button:first-child,
+  .node-hotel
+    #detail-entertainment
+    .vpw-play-giai-tri
+    .owl-nav
+    button:first-child,
+  .node-hotel #detail-room .vpw-play-rooms .owl-nav button:first-child,
+  .node-hotel #detail-room .vpw-play-promo .owl-nav button:first-child {
+    display: none;
+  }
+  .node-hotel #detail-meeting .vpw-play-meeting .owl-nav button:last-child,
+  .node-hotel #detail-wedding .vpw-play-wedding .owl-nav button:last-child,
+  .node-hotel #detail-news .vpw-play-tin-tuc .owl-nav button:last-child,
+  .node-hotel
+    #detail-entertainment
+    .vpw-play-giai-tri
+    .owl-nav
+    button:last-child,
+  .node-hotel #detail-room .vpw-play-rooms .owl-nav button:last-child,
+  .node-hotel #detail-room .vpw-play-promo .owl-nav button:last-child {
+    display: none;
+  }
+  .node-hotel
+    #detail-meeting
+    .wedding-room-listing-block
+    .img_wrapper
+    a::before,
+  .node-hotel
+    #detail-wedding
+    .wedding-room-listing-block
+    .img_wrapper
+    a::before {
+    left: 16px;
+  }
+  .node-hotel #detail-wedding .introduce-slider-wrapper .introduce-slider,
+  .node-hotel #detail-meeting .introduce-slider-wrapper .introduce-slider {
+    margin-bottom: 0 !important;
+  }
+  .node-hotel
+    #detail-meeting
+    .wedding-room-listing-block
+    .node-teaser
+    .utility-table,
+  .node-hotel
+    #detail-wedding
+    .wedding-room-listing-block
+    .node-teaser
+    .utility-table {
+    display: none;
+  }
+  .node-hotel
+    #detail-meeting
+    .wedding-room-listing-block
+    .node-teaser
+    .utility-table.mobile,
+  .node-hotel
+    #detail-wedding
+    .wedding-room-listing-block
+    .node-teaser
+    .utility-table.mobile {
+    display: block;
+    border: none;
+  }
+  .node-hotel
+    #detail-wedding
+    .wedding-service-listing-block
+    .node-teaser
+    .info_wrapper,
+  .node-hotel
+    #detail-meeting
+    .wedding-service-listing-block
+    .node-teaser
+    .info_wrapper {
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  .node-hotel
+    #detail-wedding
+    .wedding-service-listing-block
+    .node-teaser
+    .info_wrapper
+    div.room-main-des,
+  .node-hotel
+    #detail-meeting
+    .wedding-service-listing-block
+    .node-teaser
+    .info_wrapper
+    div.room-main-des {
+    margin-bottom: 0 !important;
+    -webkit-line-clamp: 13;
+  }
+  .node-hotel
+    #detail-meeting
+    .wedding-service-listing-block
+    .service-heading-wrapper,
+  .node-hotel
+    #detail-wedding
+    .wedding-service-listing-block
+    .service-heading-wrapper {
+    display: none;
+  }
+  .node-hotel
+    #detail-meeting
+    #weddingnav-tabContent
+    .wedding-room-listing-heading,
+  .node-hotel
+    #detail-wedding
+    #weddingnav-tabContent
+    .wedding-room-listing-heading {
+    display: none;
+  }
+  .node-hotel #detail-wedding ul#weddingnav-tab,
+  .node-hotel #detail-meeting ul#weddingnav-tab {
+    margin-bottom: 30px;
+  }
+  .node-hotel
+    .room-listing-block
+    .node-teaser
+    .info_wrapper
+    .dat-phong-wrapper
+    .dat-phong-btn {
+    float: left;
+  }
+  .node-hotel .room-listing-block .node-teaser .img_wrapper {
+    margin-bottom: 0;
+  }
+  .node-hotel #detail-rooms .vpw-play-room-attr.mobile {
+    display: block;
+  }
+  .node-hotel #detail-rooms .vpw-play-room-attr {
+    display: none;
+  }
+  .node-hotel #detail-general .menu-tabs-mobile {
+    padding-bottom: 20px;
+  }
+  .node-hotel #detail-general #detail-news .tit-box,
+  .node-hotel #detail-general #detail-entertainment .tit-box,
+  .node-hotel #detail-general #detail-am-thuc .tit-box,
+  .node-hotel #detail-general #detail-spa .tit-box,
+  .node-hotel #detail-general #detail-utility .tit-box,
+  .node-hotel #detail-general #detail-favour .tit-box,
+  .node-hotel #detail-general #detail-about .tit-box,
+  .node-hotel #detail-general #detail-room .tit-box {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px !important;
+    line-height: 24px;
+    color: #343a40;
+    margin-top: 0;
+  }
+  .node-hotel #detail-room .view-more {
+    padding-top: 0;
+  }
+  .node-hotel #detail-spa .content-font {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+  }
+  .node-hotel .vpw-play-tien-ich {
+    display: none;
+  }
+  .node-hotel .vpw-play-tien-ich.mobile {
+    display: flex;
+  }
+  .node-hotel .vpw-play-tien-ich .utility-box-wrapper {
+    padding-bottom: 10px;
+  }
+  .node-hotel #detail-entertainment .vpw-card {
+    height: 400px;
+  }
+  .node-hotel #detail-news .card-box-title > h3 > a {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .node-hotel #detail-favour .info-wrapper {
+    height: 135px;
+  }
+  .node-hotel #detail-favour .swiper-pagination {
+    position: relative;
+  }
+  .node-hotel #detail-favour .swiper-pagination .swiper-pagination-bullet {
+    margin-right: 8px;
+    background: #ced4da;
+    opacity: 1;
+    position: relative;
+    bottom: 2px;
+  }
+  .node-hotel
+    #detail-favour
+    .swiper-pagination
+    .swiper-pagination-bullet-active {
+    width: 12px;
+    height: 12px;
+    top: 0;
+    background: #e8952f;
+  }
+  .node-hotel .room-listing-block .node-teaser .info_wrapper {
+    padding-top: 16px;
+  }
+  .node-hotel
+    #detail-meeting
+    .wedding-room-listing-block
+    .node-teaser.node-teaser-hotel
+    .info_wrapper
+    p.room-main-des,
+  .node-hotel
+    #detail-wedding
+    .wedding-room-listing-block
+    .node-teaser.node-teaser-hotel
+    .info_wrapper
+    p.room-main-des {
+    height: 106px;
+  }
+  .node-hotel .wedding-room-listing-block .item-list ul,
+  .node-hotel .wedding-service-listing-block .item-list ul,
+  .node-hotel #detail-meeting .division hr,
+  .node-hotel #detail-wedding .division hr {
+    margin: 0;
+  }
+  .node-hotel #detail-meeting .division .col-md-12,
+  .node-hotel #detail-wedding .division .col-md-12 {
+    margin: 48px 0 !important;
+  }
+  .node-hotel #detail-meeting .division.last .col-md-12,
+  .node-hotel #detail-wedding .division.last .col-md-12 {
+    margin-top: 40px !important;
+  }
+  .node-hotel
+    #detail-wedding
+    .wedding-service-listing-block
+    .col-md-12:last-child
+    .node-teaser
+    > .vp-card-promotion,
+  .node-hotel
+    #detail-meeting
+    .wedding-service-listing-block
+    .col-md-12:last-child
+    .node-teaser
+    > .vp-card-promotion {
+    margin-bottom: 0 !important;
+  }
+  .node-hotel #detail-restaurent .row-hotel {
+    margin-bottom: 0 !important;
+  }
+  .node-hotel
+    #detail-wedding
+    .wedding-room-listing-block
+    .node-teaser.node-teaser-hotel
+    .info_wrapper {
+    padding-bottom: 0;
+  }
+  .node-hotel #detail-about .more-detail {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 13;
+    -webkit-box-orient: vertical;
+    margin-bottom: 16px;
+  }
+  .node-hotel #detail-spa .content-font > p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+    margin-bottom: 16px;
+    text-align: justify;
+  }
+  .node-hotel .info-hotel-wrapper .ht_mobile_show .addr img {
+    margin-bottom: 5px;
+  }
+  .node-hotel #detail-room .num-slide-mobile {
+    display: block;
+    color: #343a40;
+  }
+  .node-hotel #detail-room .num-slide-mobile .currentIndex {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #343a40;
+  }
+  .node-hotel #detail-room .num-slide-mobile .total_item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #343a40;
+  }
+  .node-hotel
+    .room-listing-block
+    .node-teaser
+    .info_wrapper
+    .dat-phong-wrapper
+    .lien-he-ks-col-hide {
+    display: none;
+  }
+  .node-hotel #detail-meeting .wedding-service-listing-block .item-list ul li,
+  .node-hotel #detail-wedding .wedding-service-listing-block .item-list ul li {
+    margin: 0 !important;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .node-hotel #detail-restaurent .restaurant-content-wrapper .hot-line-btn a,
+  .node-hotel
+    #detail-restaurent
+    .restaurant-content-wrapper
+    .thuc-don-btn.mobile
+    a {
+    width: 170px;
+  }
+  .node-hotel #detail-news .card-box-info,
+  .node-hotel #detail-entertainment .card-box-info,
+  .node-hotel #detail-room .card-box-info {
+  }
+  .node-hotel #detail-meeting .vpw-play-meeting .vpw-card .card-box-title p,
+  .node-hotel #detail-wedding .vpw-play-wedding .vpw-card .card-box-title p,
+  .node-hotel #detail-news .vpw-play-tin-tuc .vpw-card .card-box-title p,
+  .node-hotel
+    #detail-entertainment
+    .vpw-play-giai-tri
+    .vpw-card
+    .card-box-title
+    p,
+  .node-hotel #detail-room .vpw-play-rooms .vpw-card .card-box-title p,
+  .node-hotel #detail-room .vpw-play-promo .vpw-card .card-box-title p {
+    font-size: 14px;
+  }
+  .node-hotel
+    .room-listing-block
+    .node-teaser
+    .info_wrapper
+    .vpw-play-room-attr
+    .attr {
+    margin-right: 18px;
+  }
+}
+.title-giaitri-khampha {
+  margin-bottom: 32px !important;
+}
+body .division .row .col-md-12 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+@media (max-width: 768px) {
+  body .division .row .col-md-12 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+.node-hotel #detail-room .vpw-play-rooms .vpw-card .dien-tich-icon {
+  margin-right: 5px !important;
+}
+.node-hotel #detail-room .vpw-play-rooms .vpw-card .hotel-people-icon {
+  margin-right: 4px !important;
+  margin-left: 12px !important;
+}
+.p-before-unset {
+  margin-bottom: 12px !important;
+}
+.node-hotel #detail-room .btn-block.lien-he-ks {
+  width: auto;
+  height: 30px;
+  padding: 10px;
+}
+.node-hotel h2 {
+  color: #343a40 !important;
+  line-height: 34px;
+  font-size: 34px;
+}
+.node-hotel #detail-about .more-detail > p {
+  color: #343a40 !important;
+}
+.dien-tich-detail .sub-dien-tich-title,
+.so-phong-detail .sub-dien-tich-title {
+  color: #343a40 !important;
+}
+body .node-hotel .view-more a {
+  color: #e8952f !important;
+  line-height: 20px;
+}
+body .card-box-title .he-auto {
+  color: #212529 !important;
+  line-height: 20px !important;
+}
+body
+  .node-hotel
+  #detail-entertainment
+  .vpw-play-giai-tri
+  .vpw-card
+  .card-box-title
+  p {
+  color: #343a40 !important;
+}
+body .node-hotel #detail-room .vpw-play-rooms .vpw-card .card-box-title p {
+  display: flex !important;
+  font-size: 12px !important;
+  font-weight: 500;
+  color: #343a40 !important;
+}
+body .node-hotel #detail-room .vpw-play-rooms .vpw-card .gia-phong span.chi-tu {
+  font-weight: 500 !important;
+  color: #616971 !important;
+}
+#id-dat-phong-ngay {
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23px;
+  padding: 12px 16px;
+}
+body .node-hotel .vpw-play-tien-ich .utility-box .utility-info p.heading {
+  color: #343a40 !important;
+  line-height: 20px;
+}
+.p-before-unset {
+  color: #343a40 !important;
+}
+body #detail-utility > .row a {
+  color: #e8952f;
+}
+#detail-am-thuc .res-content p {
+  color: #343a40 !important;
+}
+#detail-am-thuc .res-content li {
+  font-weight: 600;
+}
+body #detail-utility > .row > .col-12.text-center {
+  line-height: 20px;
+}
+@media screen and (max-width: 768px) {
+  .node-hotel h2 {
+    font-size: 20px !important;
+  }
+  #detail-about > .row > .col-12 > .row > .col-md-9,
+  #detail-about > .row > .col-12 > .row > .col-md-3 {
+    padding: 0;
+  }
+  body #detail-about > .row > .col-12 > .row > .col-md-12.mb-2 {
+    margin-bottom: 16px !important;
+  }
+  #id-restaurant-content-wrapper > div:nth-child(2) > div:first-child,
+  #id-restaurant-content-wrapper > div:nth-child(2) > div:nth-child(2) {
+    margin-bottom: 16px;
+  }
+  #detail-wedding h1 {
+    font-size: 20px !important;
+    margin-bottom: 0 !important;
+  }
+  #detail-wedding > .container > .row.mb-3 > .col-md-9.mb-5.p-0 {
+    margin-bottom: 16px !important;
+  }
+}
+#tab-foods h3.font-weight-bold {
+  font-size: 20px !important;
+}
+.node-hotel #detail-restaurent .restaurant-img-wrapper a .gallery-ico {
+  bottom: 45px;
+  left: 16px;
+}
+#slide-highlight .swiper-slide > a .title_img {
+  background: rgba(0, 0, 0, 0.48) !important;
+}
+.nav-tabs .nav-item:not(:last-child) {
+  margin-right: 0 !important;
+}
+@media (max-width: 480px) {
+  .banner-hotel-wrapper a.first .container {
+    bottom: 35px;
+    left: 16px;
+    padding-left: 0 !important;
+  }
+  .meeting .banner-hotel-wrapper a.first .container,
+  .wedding .banner-hotel-wrapper a.first .container,
+  .reviews .banner-hotel-wrapper a.first .container {
+    bottom: 12px;
+    left: 16px;
+    padding-left: 0 !important;
+  }
+}
+#detail-wedding .wedding-service-listing-block .item-list ul li {
+  list-style-type: none !important;
+}
+body
+  .node-hotel
+  #tab-room
+  .room-listing-block
+  .node-teaser
+  > .vp-card-promotion {
+  padding: 16px !important;
+}
+@media (max-width: 481px) {
+  body .node-hotel #tab-room .room-listing-block .node-teaser .img_wrapper {
+    margin-top: -16px !important;
+    margin-left: -16px !important;
+    margin-right: -16px !important;
+    max-width: none !important;
+  }
+}
+body .node-hotel .room-listing-block .node-teaser > .vp-card-promotion {
+  margin-bottom: 16px !important;
+}
+#thong-so-dien-tich img {
+  margin-right: 9px !important;
+}
+#thong-so-dien-tich .dien-tich-value {
+  font-weight: 700;
+  color: #e8952f;
+  margin-left: 5px;
+}
+@media (max-width: 480px) {
+  body
+    .node-hotel
+    #detail-wedding
+    .wedding-room-listing-block
+    .node-teaser.node-teaser-hotel
+    .info_wrapper
+    .heading-wrapper
+    h3
+    > p,
+  body
+    .node-hotel
+    #detail-meeting
+    .wedding-room-listing-block
+    .node-teaser.node-teaser-hotel
+    .info_wrapper
+    .heading-wrapper
+    h3
+    > p {
+    max-width: 100% !important;
+  }
+}
+.info-hotel-wrapper .infomation ul {
+  font-weight: 500;
+  line-height: 20px;
+}
+#_book_hotel .custom_input.hotel_list {
+  line-height: 20px;
+  color: #717171;
+}
+body .node-hotel .event-map-room .nav-item.active .nav-link {
+  font-weight: 700 !important;
+  color: #e8952f !important;
+}
+body .node-hotel .event-map-room .nav-item .nav-link {
+  color: #343a40 !important;
+}
+.node-hotel #detail-wedding p.short-description-excerpt {
+  font-size: 14px !important;
+  line-height: 20px;
+  font-weight: 400;
+}
+#detail-meeting .row.justify-content-center .col-md-8.mb-3,
+#detail-wedding .row.justify-content-center .col-md-8.mb-3 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+#detail-meeting .nav-tabs .nav-link,
+#detail-wedding .nav-tabs .nav-link {
+  padding: 16px 18.75px;
+}
+#detail-news .vpw-card .card-box-info .row .col-12,
+#detail-entertainment .vpw-card .card-box-info .row .col-12 {
+  padding-right: 0;
+  padding-left: 0;
+}
+body.page-node-type-news
+  #block-adminimal-theme-content
+  form.node-news-edit-form
+  .layout-region.layout-region-node-main,
+body.page-node-type-news
+  #block-adminimal-theme-content
+  form.node-news-edit-form
+  .layout-region.layout-region-node-secondary {
+  width: 100%;
+  padding: 0;
+}
+body.page-node-type-promotion
+  #block-adminimal-theme-content
+  form.node-promotion-edit-form
+  .layout-region.layout-region-node-main,
+body.page-node-type-promotion
+  #block-adminimal-theme-content
+  form.node-promotion-edit-form
+  .layout-region.layout-region-node-secondary {
+  width: 100%;
+  padding: 0;
+}

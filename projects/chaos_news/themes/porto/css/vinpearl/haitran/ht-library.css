@@ -1,0 +1,361 @@
+.flex-vertical {
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.flex-wrap {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.flex-horizontal {
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.ht_flex {
+  display: flex;
+}
+.ht_flex_column_sp_btw {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.flex_space_between {
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.ht_img_fullwidth {
+  width: 100%;
+  height: auto;
+}
+.ht_img_fullheight {
+  width: auto;
+  height: 100%;
+}
+.ht_img_full {
+  width: 100%;
+  height: 100%;
+}
+.ht_text_bold {
+  font-weight: 700;
+}
+.ht_relative_ele {
+  position: relative;
+}
+.ht_center_div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 0);
+  top: 0;
+}
+.ht_transition {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.ht_reset_margin {
+  margin: 0;
+}
+.ht_reset_pd {
+  padding: 0 !important;
+}
+.ht_text_align_r {
+  text-align: right;
+}
+.ht_text_align_l {
+  text-align: left;
+}
+.ht_text_align_c {
+  text-align: center;
+  display: block;
+}
+.ht_text_bold {
+  font-weight: 700;
+}
+.w100 {
+  width: 100%;
+}
+.three_dots_1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.three_dots_2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.three_dots_3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.three_dots_4 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.three_dots_5 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+.three_dots_6 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+.three_dots_7 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+}
+.ht_mirror {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.ht_mirror:after {
+  background: #fff;
+  height: calc(100% 50px);
+  left: -40px;
+  top: -25px;
+  width: 20px;
+  z-index: 1;
+  content: "";
+  opacity: 0.2;
+  position: absolute;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
+.ht_mirror:hover:after {
+  left: 145%;
+  transition: all 3000ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.ht_mobile_show {
+  display: none;
+}
+.ht_mobile_hide {
+  display: block;
+}
+.ht_tablet_show {
+  display: none;
+}
+.ht_tablet_hide {
+  display: block;
+}
+@media (max-width: 992px) {
+  .ht_tablet_show {
+    display: block !important;
+  }
+  .ht_tablet_hide {
+    display: none !important;
+  }
+}
+@media (max-width: 480px) {
+  .ht_mobile_show {
+    display: block !important;
+  }
+  .ht_mobile_hide {
+    display: none !important;
+  }
+}
+@media (min-width: 576px) {
+  .ch {
+    height: calc(500px * 9 / 16);
+  }
+}
+@media (min-width: 768px) {
+  .ch {
+    height: calc(680px * 9 / 16);
+  }
+}
+@media (min-width: 992px) {
+  .ch {
+    height: calc(940px * 9 / 16);
+  }
+}
+@media (min-width: 1200px) {
+  .ch {
+    height: calc(1150px * 9 / 16);
+  }
+}
+@media (max-width: 575px) {
+  .ch {
+    height: calc((100vw - 40px) * 9 / 16);
+  }
+}
+.node-hotel #detail-news .card-box-title > h3 > a {
+  text-align: left;
+}
+.custom_new_menu.top_footer_menu_wrapper li.menu-item > a {
+  min-width: unset;
+  width: max-content;
+  width: fit-content;
+}
+.node-hotel
+  #detail-meeting
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  .wedding-view-more-arrow:after,
+.node-hotel
+  #detail-wedding
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  .wedding-view-more-arrow:after,
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  .wedding-view-more-arrow:after,
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .node-teaser
+  .info_wrapper
+  .wedding-view-more-arrow:after {
+  background-image: url(../../../images/microsite-hotel/view_more_arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 11px;
+  height: 6px;
+  font-size: 0;
+}
+.node-hotel
+  #detail-wedding
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  .view-more-arrow-fix:after,
+.node-hotel
+  #detail-meeting
+  .wedding-room-listing-block
+  .node-teaser.node-teaser-hotel
+  .info_wrapper
+  .view-more-arrow-fix:after,
+.node-hotel
+  #detail-wedding
+  .wedding-service-listing-block
+  .view-more-arrow-fix:after,
+.node-hotel
+  #detail-meeting
+  .wedding-service-listing-block
+  .view-more-arrow-fix:after {
+  background-image: url(../../../images/microsite-hotel/view_more_arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 11px;
+  height: 6px;
+  font-size: 0;
+  transform: rotate(180deg);
+  margin-top: -2px;
+}
+@media (max-width: 480px) {
+  .vp-footer-widget__title {
+    width: 100%;
+  }
+  .custom_new_menu.top_footer_menu_wrapper li.menu-item .down-chevon {
+    right: -55%;
+  }
+  .custom_new_menu.top_footer_menu_wrapper li.menu-item > a {
+    width: 95px !important;
+  }
+  #microsite_hotel_request_form form .form-item-ho-ten,
+  #microsite_hotel_request_form form .form-item-so-dien-thoai,
+  #microsite_hotel_request_form form .form-item-email,
+  #microsite_hotel_request_form form .form-item-cong-ty {
+    width: 100%;
+  }
+  #microsite_hotel_request_form form .form-item-dieu-kien {
+    align-items: baseline;
+  }
+  #microsite_hotel_request_form form .form-item-dieu-kien input,
+  #microsite_hotel_request_form form .form-item-dieu-kien input::before,
+  #microsite_hotel_request_form form .form-item-dieu-kien input::after {
+    width: 16px !important;
+    height: 16px !important;
+  }
+  #microsite_hotel_request_form form .form-item-dieu-kien .description {
+    margin-left: 15px;
+  }
+  .node-hotel
+    #detail-wedding
+    .wedding-room-listing-block
+    .node-teaser.node-teaser-hotel
+    .info_wrapper
+    .heading-wrapper
+    h3
+    > p,
+  .node-hotel
+    #detail-meeting
+    .wedding-room-listing-block
+    .node-teaser.node-teaser-hotel
+    .info_wrapper
+    .heading-wrapper
+    h3
+    > p {
+    max-width: 42% !important;
+  }
+  .node-hotel #detail-spa .spa-img {
+    height: 160px !important;
+  }
+  .node-hotel
+    #detail-restaurent
+    .restaurant-content-wrapper
+    .thuc-don-btn.mobile,
+  .hot-line-btn.float-left {
+    width: 45% !important;
+    margin: 0 !important;
+    float: unset !important;
+  }
+}
+.page-node-type-news .container.detail .tags-block {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.page-node-type-news .container.detail .tags-block span {
+  font-weight: 700;
+  margin-bottom: 5px;
+  display: block;
+}
+.page-node-type-news .container.detail .tags-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.page-node-type-news .container.detail .tags-wrapper a {
+  background-color: #f39f2d;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.view-id-node_functions_haitran.view-display-id-tag_related_news .view-header {
+  display: none;
+}
+.tags-item .title-item {
+  text-transform: unset !important;
+}

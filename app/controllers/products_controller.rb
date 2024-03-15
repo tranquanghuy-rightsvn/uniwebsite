@@ -1,11 +1,11 @@
 class ProductsController < ApplicationController
   before_action :check_manage_website
+  before_action :check_owner_website, only: [:edit, :update, :destroy]
   before_action :get_model
 
 
   def new
     @product = @model.new
-
   end
 
   def create
@@ -39,10 +39,16 @@ class ProductsController < ApplicationController
     end
   end
 
+  def destroy
+    @product = @model.find_by(website_id: params[:website_id], id: params[:id]).destroy!
+
+    redirect_to website_products_path(website_id: params[:website_id])
+  end
+
   private
 
   def product_params
-    params.require("product_#{@brief}".to_sym).permit :title, :description, :content, :image, :url, :content_copied, :keywords
+    params.require("product_#{@brief}".to_sym).permit :title, :description, :content, :image, :url, :keywords, :category_id
   end
 
   def check_manage_website
@@ -51,8 +57,14 @@ class ProductsController < ApplicationController
     end
   end
 
+  def check_owner_website
+    unless current_user && current_user.is_owner_website?(params[:website_id])
+      redirect_to root_path
+    end
+  end
+
   def product_update_params
-    params.require("#{@brief}".to_sym).permit :title, :description, :content, :image, :content_copied, :keywords
+    params.require("product_#{@brief}".to_sym).permit :title, :description, :content, :image, :keywords, :category_id
   end
 
   def get_model

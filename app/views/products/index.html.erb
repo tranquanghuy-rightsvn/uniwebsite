@@ -1,8 +1,8 @@
 <div class="container">
+  <%= link_to "<button class='btn btn-success mb-3'> Tạo product</button>".html_safe, new_website_product_path(website_id: params[:website_id]) %>
   <table class="table table-striped table-bordered">
     <thead>
       <tr>
-        <th scope="col">ID</th>
         <th scope="col">Title</th>
         <th scope="col">Action</th>
       </tr>
@@ -10,13 +10,13 @@
     <tbody>
       <% @products.map do |product| %>
         <tr>
-          <th scope="row"><%= product.id %></th>
           <td><%= product.title %></td>
-          <td><button class="btn btn-primary">Edit</button><button class="btn btn-danger">Delete</button></td>
+          <td>
+            <%= link_to "<button class='btn btn-primary'>Edit</button>".html_safe, edit_website_product_path(website_id: params[:website_id], id: product.id) %>
+            &nbsp;
+            <%= link_to "<button class='btn btn-danger'>Delete</button></td>".html_safe, website_product_path(website_id: params[:website_id], id: product.id), method: :delete, data: {confirm: 'Bạn muốn xóa không?'} %>
         </tr>
       <% end %>
     </tbody>
   </table>
-
-  <%= link_to "<button class='btn btn-success'> Tạo product</button>".html_safe, new_website_product_path(website_id: params[:website_id]) %>
 </div>

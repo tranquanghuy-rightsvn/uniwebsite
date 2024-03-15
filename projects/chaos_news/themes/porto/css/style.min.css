@@ -1,0 +1,736 @@
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (max-width: 767px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+.container a {
+  text-decoration: none;
+}
+.banner .icon-facebook {
+  display: none !important;
+}
+.flag-favourite {
+  position: absolute;
+  background-color: transparent;
+  right: 15px;
+  top: 15px;
+  z-index: 1;
+}
+.flag-favourite .fa-heart {
+  color: #ef4136;
+  font-size: 20px;
+}
+.flag-favourite .fa-heart:before {
+  color: red;
+}
+.section-resort-content.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (max-width: 767px) {
+  .section-resort-content.container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+.section-resort-content .row {
+  margin-right: -10px !important;
+  margin-left: -10px !important;
+}
+.section-resort-content .fadeInUp {
+  margin-bottom: 20px !important;
+}
+@media (max-width: 768px) {
+  .section-resort-content .fadeInUp {
+    margin-bottom: 16px !important;
+  }
+}
+.section-resort-content .card {
+  border: none;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 0 !important;
+  height: 100%;
+}
+.section-resort-content .bg-image .img-box img {
+  border-radius: 4px;
+}
+.section-resort-content .card-body {
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid #dbdbdb;
+  border-top: none;
+  border-radius: 0 4px 4px 4px;
+}
+.section-resort-content .card-body a {
+  text-decoration: none;
+}
+.section-resort-content .card-body .card-title {
+  margin-bottom: 12px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #343a40;
+  max-height: 38px;
+  height: auto;
+  text-align: left;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}
+.section-resort-content .card-body .card-content {
+  color: #343a40;
+  font-size: 14px;
+  text-align: left;
+  line-height: 20px;
+  padding-left: 25px;
+  margin-bottom: 8px;
+  position: relative;
+}
+.section-resort-content .card-body .card-content.time {
+  color: #3c3c3c;
+}
+.section-resort-content .card-body .card-content.phone {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: break-spaces;
+}
+.section-resort-content .card-body .card-content.map {
+  height: auto;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: break-spaces;
+}
+.section-resort-content .card-body .card-content.map::before {
+  content: "";
+  background-image: url(../images/icons/bi_geo-alt.svg);
+  position: absolute;
+  background-size: 100% 100%;
+  left: 0;
+  height: 16px;
+  width: 16px;
+}
+.section-resort-content .card-body .card-content.time::before {
+  content: "";
+  background-image: url(../images/icons/bi_clock.svg);
+  position: absolute;
+  background-size: 100% 100%;
+  left: 0;
+  height: 16px;
+  width: 16px;
+}
+.section-resort-content .card-body .card-content.phone::before {
+  content: "";
+  background-image: url(../images/icons/bi_telephone.svg);
+  position: absolute;
+  background-size: 100% 100%;
+  left: 0;
+  height: 16px;
+  width: 16px;
+}
+.section-resort-content .card-body .card-content.trip-ad-point {
+  line-height: 24px;
+  position: relative;
+}
+.section-resort-content .card-body .tags_wrapper ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  list-style: none;
+}
+.section-resort-content .card-body .tags_wrapper ul li {
+  border: 1px solid #f39f2d;
+  border-radius: 4px;
+  padding: 0 10px 0 10px;
+  font-size: 13px;
+  color: #f39f2d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem 5px 0;
+  height: 20px;
+  white-space: nowrap;
+  line-height: 20px;
+}
+.section-resort-content
+  .card-body
+  .field-tags
+  .slideTags
+  .swiper-slide
+  .text-tag {
+  font-size: 12px;
+  color: #616971;
+  padding: 4px 6px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  height: 26px;
+  font-weight: 400;
+}
+.section-resort-content .card-body .price_n_btn {
+  display: flex;
+  width: 93%;
+  position: absolute;
+  bottom: 12px;
+  justify-content: space-between;
+}
+.section-resort-content .card-body .price_n_btn .price_wrapper {
+  width: 144px;
+  font-size: 13px;
+}
+.section-resort-content .card-body .price_n_btn .price_wrapper .price span {
+  font-weight: 500;
+  font-size: 16px;
+}
+.section-resort-content .card-body .price_n_btn button {
+  width: 95px;
+  height: 35px;
+  background: #e8952f;
+  border-radius: 3px;
+  padding: 7px 8px 7px 8px;
+  font-size: 14px;
+  border-color: unset;
+}
+.section-resort-content .card-body .trip-ad-point {
+  position: relative;
+}
+.section-resort-content .card-body .trip-ad-point .trip-ad-dot-outer {
+  padding: 0 6px;
+  border-radius: 50%;
+  margin-left: 2px;
+  margin-top: 0;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  position: relative;
+}
+.section-resort-content
+  .card-body
+  .trip-ad-point
+  .trip-ad-dot-outer
+  .trip-ad-dot {
+  height: 12px;
+  width: 12px;
+  background-color: #00aa6c;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 1px;
+  top: 1px;
+}
+.section-resort-content
+  .card-body
+  .trip-ad-point
+  .trip-ad-dot-outer
+  .trip-ad-dot.half {
+  border-radius: unset;
+  height: 12px;
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+  width: 6px;
+}
+.section-resort-content .card-body .trip-ad-point .trip-ad-point-number {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  color: #222;
+  margin: 0 0 0 10px;
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+}
+.top-search,
+.top-title {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section-resort-top .section-resort-top-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: justify;
+  color: #343a40;
+}
+@media (max-width: 767px) {
+  .section-resort-top .section-resort-top-title.festival {
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .section-resort-top .section-resort-top-title {
+    text-align: center;
+  }
+}
+.section-resort-top .top-search .field-search-wrapper-1 {
+  position: relative;
+}
+.section-resort-top .top-search .icon-search::before {
+  content: "";
+  background-image: url(../images/icons/feather_search.svg);
+  position: absolute;
+  background-size: 100% 100%;
+  left: 12px;
+  top: 12px;
+  height: 16px;
+  width: 16px;
+}
+.views-exposed-form .section-resort-filter .button-left {
+  background: #e8952f;
+  border-radius: 4px;
+  border: #e8952f;
+}
+.page-item {
+  width: 36px;
+  height: 36px;
+  margin: 0;
+}
+.page-item.active .page-link {
+  background-color: #e8952f;
+  color: #fff;
+  border-color: #e8952f;
+}
+.page-item.active .page-link span {
+  color: #fff;
+}
+.page-item .page-link {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #dee2e6;
+  color: #e8952f;
+}
+.db-checkbox label {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+.db-checkbox label input {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+  opacity: 0;
+}
+.db-checkbox label input:checked ~ em {
+  background-image: url(../images/icons/icon_check.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #e8952f;
+  border: 1px solid #e8952f;
+}
+.db-checkbox label span {
+  display: block;
+  line-height: 30px;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+.db-checkbox label em {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin: 3px 10px 0 0;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+.section-resort-content .card.festival {
+  min-height: 350px;
+}
+.section-resort-content .bg-image .timeline {
+  top: 10px;
+  left: 10px;
+  width: 80px;
+  height: 28px;
+  color: #fff;
+  font-size: 13px;
+  line-height: 28px;
+  text-align: center;
+  position: absolute;
+  background-color: #eaa044;
+  border-radius: 4px;
+  z-index: 1;
+}
+.section-resort-top .field-search-wrapper-1 .input-text {
+  width: 100%;
+  padding-left: 28px;
+  height: 40px;
+}
+.section-resort-top .field-search-wrapper-1 .button-sub {
+  background: 0 0;
+  border: none;
+  border-radius: 0;
+  color: #212121;
+  padding: 11px 15px;
+  position: absolute;
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .section-resort-top .d-md-block {
+    width: 60%;
+  }
+}
+@media (max-width: 767px) {
+  .section-resort-top .justify-content-end {
+    width: 40%;
+  }
+}
+.section-resort-top .button-right {
+  color: #343a40;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #8c8c8c;
+  height: 48px;
+}
+#resort-filter-id .card-filter .ml-3 {
+  margin-left: 3px;
+  width: auto;
+}
+#resort-filter-id .card-filter .ml-3 .form-check-input:checked {
+  background-color: #0d6efd;
+}
+#resort-filter-id .button-right {
+  background-color: #fff;
+  color: #f37043;
+  border: 1px solid #f37043;
+  background-image: none;
+  border-radius: 4px;
+}
+.test-con {
+  font-weight: 700;
+  color: red;
+  background-color: #00f;
+}
+.pq-uc-favorite-container {
+  background-color: transparent;
+}
+.pq-uc-favorite-container input#shareable_link {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: #fff;
+}
+@media only screen and (max-width: 768px) {
+  .pq-uc-favorite-container input#shareable_link {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+.pq-uc-favorite-container #link_copy {
+  top: 10px;
+  outline: 0;
+}
+@media (max-width: 480px) {
+  .pq-uc-favorite-container #link_copy {
+    background-color: #fff;
+    padding: 0 10px;
+    right: 2px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .pq-uc-favorite-container .share-link-title-wrapper {
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+}
+.pq-uc-favorite-container .banner {
+  background: 0 0 !important;
+  border-radius: 10px;
+  margin-bottom: 48px;
+}
+.pq-uc-favorite-container .banner .banner-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 480px) {
+  .pq-uc-favorite-container .banner .banner-item {
+    margin-top: 20px;
+  }
+}
+.pq-uc-favorite-container .banner .banner-title {
+  font-size: 24px;
+  line-height: 1.44;
+  letter-spacing: 0.67px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.pq-uc-favorite-container .banner .step-title {
+  border-radius: 50%;
+  width: 120px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.pq-uc-favorite-container .banner .step-title .inner-circle {
+  background: #e8952f;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pq-uc-favorite-container .banner .step-detail {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+}
+.pq-uc-favorite-container .banner .step-detail p {
+  color: #343a40;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 0;
+  padding: 0 18px;
+}
+.pq-uc-favorite-container .banner .step-share {
+  font-weight: 500;
+}
+.pq-uc-favorite-container .cuisines-container {
+  margin-top: 72px;
+}
+.pq-uc-favorite-container .cuisines-container .category-name,
+.pq-uc-favorite-container .discover-container .category-name,
+.pq-uc-favorite-container .event-container .category-name,
+.pq-uc-favorite-container .resort-container .category-name {
+  margin-bottom: 32px;
+}
+.pq-uc-favorite-container .cuisines-container .card-container,
+.pq-uc-favorite-container .discover-container .card-container,
+.pq-uc-favorite-container .event-container .card-container,
+.pq-uc-favorite-container .resort-container .card-container {
+  margin-bottom: 20px;
+}
+.pq-uc-favorite-container .cuisines-container .card,
+.pq-uc-favorite-container .discover-container .card,
+.pq-uc-favorite-container .event-container .card,
+.pq-uc-favorite-container .resort-container .card {
+  height: 100%;
+}
+.pq-uc-favorite-container .cuisines-container .card-title,
+.pq-uc-favorite-container .discover-container .card-title,
+.pq-uc-favorite-container .event-container .card-title,
+.pq-uc-favorite-container .resort-container .card-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 12px;
+  height: auto;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}
+.pq-uc-favorite-container .cuisines-container .card-content,
+.pq-uc-favorite-container .discover-container .card-content,
+.pq-uc-favorite-container .event-container .card-content,
+.pq-uc-favorite-container .resort-container .card-content {
+  margin-bottom: 8px;
+  height: auto;
+  color: #343a40;
+  font-size: 14px;
+  line-height: 20px;
+}
+.pq-uc-favorite-container .cuisines-container .map,
+.pq-uc-favorite-container .discover-container .map,
+.pq-uc-favorite-container .event-container .map,
+.pq-uc-favorite-container .resort-container .map {
+  height: auto !important;
+}
+.pq-uc-favorite-container .cuisines-container .list-description,
+.pq-uc-favorite-container .discover-container .list-description,
+.pq-uc-favorite-container .event-container .list-description,
+.pq-uc-favorite-container .resort-container .list-description {
+  display: flex;
+  flex-direction: row;
+}
+.pq-uc-favorite-container
+  .cuisines-container
+  .list-description
+  .item-description,
+.pq-uc-favorite-container
+  .discover-container
+  .list-description
+  .item-description,
+.pq-uc-favorite-container .event-container .list-description .item-description,
+.pq-uc-favorite-container
+  .resort-container
+  .list-description
+  .item-description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  margin-right: 8px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #616971;
+}
+.pq-uc-favorite-container .discover-container,
+.pq-uc-favorite-container .event-container,
+.pq-uc-favorite-container .resort-container {
+  margin-top: 28px;
+}
+.pq-uc-favorite-container .event-container .card-title,
+.pq-uc-favorite-container .resort-container .card-title {
+  margin-bottom: 12px;
+}
+.pq-uc-favorite-container .event-container .trip-ad-point::before,
+.pq-uc-favorite-container .resort-container .trip-ad-point::before {
+  width: 16px !important;
+  height: 20.5px !important;
+}
+.pq-uc-favorite-container .event-container .trip-ad-dot-outer,
+.pq-uc-favorite-container .resort-container .trip-ad-dot-outer {
+  background-color: #00aa6c;
+  width: 12px;
+  height: 12px;
+  padding: 0 !important;
+  margin-left: 2px;
+}
+.pq-uc-favorite-container .event-container .trip-ad-dot-outer:first-child,
+.pq-uc-favorite-container .resort-container .trip-ad-dot-outer:first-child {
+  margin-left: 0 !important;
+}
+.pq-uc-favorite-container .event-container .trip-ad-point-number,
+.pq-uc-favorite-container .resort-container .trip-ad-point-number {
+  margin-left: 4px;
+  margin-top: 2px;
+}
+.pq-uc-favorite-container .cuisine-flag-collapse,
+.pq-uc-favorite-container .discover-flag-collapse,
+.pq-uc-favorite-container .event-flag-collapse,
+.pq-uc-favorite-container .resort-flag-collapse {
+  display: none;
+}
+.pq-uc-favorite-container .field-tags {
+  margin-bottom: 12px;
+}
+.pq-uc-favorite-container .slideTags {
+  height: auto;
+}
+.pq-uc-favorite-container .slideTags .text-tag {
+  font-size: 12px;
+  color: #616971;
+  padding: 4px 6px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  height: auto;
+  font-weight: 400;
+}
+.show-more {
+  margin-top: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #e8952f;
+  font-size: 14px;
+  line-height: 20px;
+}
+.show-more:hover {
+  cursor: pointer;
+}
+.show-more span {
+  position: relative;
+}
+.show-more span::before {
+  content: " ";
+  background-image: url(../../../porto/images/icons/bi_geo-alt.svg);
+  background-size: 100% 100%;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: -20px;
+}
+.hide-content {
+  display: none;
+}
+.no-gutters {
+  margin-right: -10px !important;
+  margin-left: -10px !important;
+}
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+}
+body {
+  background: #fff;
+}
+a {
+  color: #0079c0;
+}
+.bg-inverse {
+  background: #ff4e2e !important;
+}
+.site-footer {
+  background: #0079c0 !important;
+}
+.menu--main li a {
+  color: #ff4e2e;
+}
+.menu--account li a {
+  color: #ff4e2e;
+}
+.site-name-slogan a {
+  text-decoration: none;
+}
+.card-group img {
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+.card-group .field--type-image {
+  margin: 0;
+}
+.slick {
+  width: 100%;
+}
+.slick > div {
+  margin: 0 15px;
+}

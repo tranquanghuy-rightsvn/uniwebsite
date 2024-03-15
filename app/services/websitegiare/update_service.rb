@@ -1,4 +1,4 @@
-class Product::UpdateService
+class Websitegiare::UpdateService
   attr_accessor :resource
 
   def initialize resource

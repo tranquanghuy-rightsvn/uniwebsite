@@ -1,0 +1,254 @@
+.rd-front {
+  margin-bottom: 61px;
+}
+.recommendation-block {
+  position: relative;
+}
+.rd-slider .img-wrapper img {
+  width: 100%;
+  height: 251px;
+  object-fit: cover;
+  border-radius: 4px 4px 0 0;
+}
+.rd-slider .img-wrapper .sale-tag {
+  position: absolute;
+  color: #fff;
+  width: 66px;
+  height: 45px;
+  background: url(../images/sale_tag_rd.svg) no-repeat;
+  font-size: 18px;
+  line-height: 23px;
+  top: 16px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.rd-slider .item-info {
+  padding: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 0 0 4px 4px;
+  background: #fff;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.rd-slider .item-info .info-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.rd-slider .info-left > div,
+.rd-slider .info-right > div {
+  font-size: 14px;
+  line-height: 20px;
+  color: #343a40;
+}
+.rd-slider .info-left > div {
+  text-align: left;
+}
+.rd-slider .info-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.rd-slider .info-right > div {
+  text-align: right;
+}
+.rd-slider .info-right > div.sale-price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #e8952f;
+}
+.rd-slider .item-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #343a40;
+  margin-bottom: 16px;
+}
+.rd-slider .time {
+  margin-bottom: 8px;
+  background-image: url(../images/rd/clock.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 24px;
+}
+.rd-slider .buyer-amount {
+  background-image: url(../images/rd/flash.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 24px;
+}
+.rd-slider .original-price {
+  margin-bottom: 4px;
+}
+.recommendation-block .swiper-button-prev {
+  left: -8px;
+  background: url(../images/rd/left-arrow.svg) no-repeat scroll 0 0 transparent;
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-size: cover;
+}
+body.context-nha-trang .recommendation-block .swiper-button-prev,
+body.context-nam-hoi-an .recommendation-block .swiper-button-prev {
+  left: 40px;
+  background: url(../images/icons/icon-arrow-left.svg) no-repeat center/cover;
+}
+.recommendation-block .swiper-button-next {
+  right: -8px;
+  background: url(../images/rd/right-arrow.svg) no-repeat scroll 0 0 transparent;
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-size: cover;
+}
+body.context-nha-trang .recommendation-block .swiper-button-next,
+body.context-nam-hoi-an .recommendation-block .swiper-button-next {
+  right: 40px;
+  background: url(../images/icons/icon-arrow-left.svg) no-repeat center/cover;
+  transform: rotate(180deg);
+}
+.recommendation-block .swiper-button-prev::after,
+.recommendation-block .swiper-button-next::after {
+  display: none;
+}
+body.path-frontpage .rd-title,
+.rd-micro .rd-title,
+.rd-news .rd-title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  margin-bottom: 30px;
+  color: #222;
+}
+.rd-micro .swiper-button-next,
+.rd-news .swiper-button-next {
+  right: -24px;
+}
+.rd-micro .swiper-button-prev,
+.rd-news .swiper-button-prev {
+  left: -24px;
+}
+body.page-node-type-news {
+  background-color: #f5f6fa !important;
+}
+.rd-news {
+  margin-top: 60px;
+  margin-bottom: 28px;
+}
+.rd-news .rd-slider .swiper-slide img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.rd-news .rd-slider .swiper-slide .wrap-title a {
+  font-family: eb garamond;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.rd-des-nt,
+.rd-des-nha {
+  margin: 60px auto;
+}
+.rd-des-nt .rd-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #404040;
+  text-align: center;
+  margin-bottom: 57px;
+  position: relative;
+  text-transform: uppercase;
+}
+.rd-des-nha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rd-des-nha > .content {
+  width: 100%;
+}
+.rd-des-nha .rd-title {
+  display: inline-block;
+  padding: 5px 15px;
+  background: url(../img/nam-hoi-an/bg-title.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #e07a5f !important;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-align: center;
+  margin-bottom: 57px;
+  text-transform: uppercase;
+}
+.rd-des-nt .rd-title::before {
+  content: "";
+  width: 100%;
+  height: 12px;
+  background-image: url(../images/improvement/double_wave.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+}
+.recommendation-block.rd-des-pq.container {
+  padding-top: 72px !important;
+  padding-bottom: 72px !important;
+}
+.rd-des-pq .extra-tit {
+  color: #000 !important;
+}
+.rd-des-pq .exp-block-tit {
+  color: #2183df !important;
+}
+.rd-des-pq .tit-line {
+  border-color: #2183df !important;
+  background-color: #2183df !important;
+}
+.rd-des-pq > .content {
+  position: relative;
+}
+.recommendation-block.rd-des-pq .swiper-button-next {
+  right: -24px;
+  top: 149px;
+}
+.recommendation-block.rd-des-pq .swiper-button-prev {
+  left: -24px;
+  top: 149px;
+}
+@media (min-width: 992px) {
+  body.path-frontpage .vp-container div.container {
+    padding: 0 16px;
+  }
+}
+@media (max-width: 480px) {
+  .recommendation-block .swiper-button-prev,
+  .recommendation-block .swiper-button-next {
+    display: none;
+  }
+  body.path-frontpage .rd-title,
+  .rd-micro .rd-title,
+  .rd-news .rd-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .recommendation-block {
+    padding-right: 0;
+  }
+  .rd-des-nt .rd-title {
+    font-size: 22px;
+  }
+}
