@@ -40,6 +40,14 @@ module Zreview
       content_html = "<!DOCTYPE html>
       <html lang='vi' xmlns='http://www.w3.org/1999/xhtml'>
       <head>
+        <script async src='https://www.googletagmanager.com/gtag/js?id=G-00HNHTJ14N'></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-00HNHTJ14N');
+        </script>
         <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
         <meta http-equiv='REFRESH' content='1800' />
 
