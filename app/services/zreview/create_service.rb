@@ -85,28 +85,28 @@ module Zreview
 
         <script type='application/ld+json'>
           {
-            '@context': 'http://schema.org',
-            '@type': 'NewsArticle',
-            'mainEntityOfPage':{
-            '@type':'WebPage',
-            '@id':'https://zreview.vn/" + resource.url + "'
+            \"@context\": \"http://schema.org\",
+            \"@type\": \"NewsArticle\",
+            \"mainEntityOfPage\": {
+            \"@type\": \"WebPage\",
+            \"@id\": \"https://zreview.vn/" + resource.url + "\"
           },
-          'headline': '" + resource.title.gsub('"', "") + "',
-          'description': '" + resource.description.gsub('"', "") + "',
-          'image': {
-          '@type': 'ImageObject',
-          'url': 'https://zreview.vn/" + resource_img + "',
-          'width' : 500,
-          'height' : 333
+          \"headline\": \"" + resource.title.gsub('"', "") + "\",
+          \"description\": \"" + resource.description.gsub('"', "") + "\",
+          \"image\": {
+          \"@type\": \"ImageObject\",
+          \"url\": \"https://zreview.vn/" + resource_img + "\",
+          \"width\": 500,
+          \"height\": 333
         },
-        'datePublished': '" + resource.formated_time + "',
-        'author': {
-        '@type': 'Organization',
-        'name': 'Zreview'
+        \"datePublished\": \"" + resource.formated_time + "\",
+        \"author\": {
+        \"@type\": \"Organization\",
+        \"name\": \"Zreview\"
       },
-      'publisher': {
-      '@type': 'Organization',
-      'name': 'Zreview'
+      \"publisher\": {
+      \"@type\": \"Organization\",
+      \"name\": \"Zreview\"
       }
       }
       var cate_path = " + category_direct_path[0...-5] + ";
@@ -444,8 +444,8 @@ module Zreview
 
       File.write(sitemap_xml_path, doc_sitemap_xml)
 
-      # zreview_path = Rails.root.join('projects', 'zreview')
-      # system('cd ' + zreview_path.to_s + ' && git add . && git commit -m "New commit" && git push origin master -f')
+      zreview_path = Rails.root.join('projects', 'zreview')
+      system('cd ' + zreview_path.to_s + ' && git add . && git commit -m "New commit" && git push origin master -f')
     end
   end
 end
