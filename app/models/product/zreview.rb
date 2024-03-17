@@ -24,6 +24,10 @@ class Product::Zreview  < Product
     created_at.in_time_zone('Asia/Ho_Chi_Minh').strftime('%Y-%m-%dT%H:%M:%S%:z')
   end
 
+  def title_format
+    title[0].capitalize + title[1..-1]
+  end
+
   private
 
   def generate_data

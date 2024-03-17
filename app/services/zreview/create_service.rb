@@ -51,7 +51,7 @@ module Zreview
         <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
         <meta http-equiv='REFRESH' content='1800' />
 
-        <title>" + resource.title.capitalize + "</title>
+        <title>" + resource.title_format + "</title>
         <meta name='description' content='" + resource.description.gsub('"', "") + "' />
         <meta name='keywords' content='" + JSON.parse(resource.keywords).join(",") + "' />
 
@@ -115,7 +115,7 @@ module Zreview
 
       doc_root_post = Nokogiri::HTML(content_html.to_s)
       title_root_post = doc_root_post.at_css('#title-review')
-      title_root_post.inner_html = resource.title.capitalize
+      title_root_post.inner_html = resource.title_format
       content_root_post = doc_root_post.at_css('#content-review')
       content_root_post.inner_html = resource.content.body.to_s.gsub(/<action-text-attachment[^>]*>[^<]*<\/action-text-attachment>/, '')
       date_root_post = doc_root_post.at_css('#time-review')
@@ -131,17 +131,17 @@ module Zreview
         list_news_html += "<article zone-ad-name='' class='article-item znews-native type-text picked-featured'>
            <p class='article-thumbnail'>
               <a href='" + product.url + "'>
-                <img src='" + product_img + "'  alt='" + product.title.capitalize + "' />
+                <img src='" + product_img + "'  alt='" + product.title_format + "' />
               </a>
             </p>
             <header>
               <p class='article-title'>
-                <a href='" + product.url + "'>" + product.title.capitalize + "</a>
+                <a href='" + product.url + "'>" + product.title_format + "</a>
               </p>
               <p class='article-summary'>" + product.description + "</p>
 
               <ul class='article-related'>
-                <li class=' type-text'><a href='" + product.url + "' title='" + product.title.capitalize + "'>" + product.title.capitalize + "</a></li>
+                <li class=' type-text'><a href='" + product.url + "' title='" + product.title_format + "'>" + product.title_format + "</a></li>
               </ul>
             </header>
           </article>"
@@ -164,17 +164,17 @@ module Zreview
         list_news_html += "<article zone-ad-name='' class='article-item znews-native type-text picked-featured'>
            <p class='article-thumbnail'>
               <a href='" + product.url + "'>
-                <img src='" + product_img + "'  alt='" + product.title.capitalize + "' />
+                <img src='" + product_img + "'  alt='" + product.title_format + "' />
               </a>
             </p>
             <header>
               <p class='article-title'>
-                <a href='" + product.url + "'>" + product.title.capitalize + "</a>
+                <a href='" + product.url + "'>" + product.title_format + "</a>
               </p>
               <p class='article-summary'>" + product.description + "</p>
 
               <ul class='article-related'>
-                <li class=' type-text'><a href='" + product.url + "' title='" + product.title.capitalize + "'>" + product.title.capitalize + "</a></li>
+                <li class=' type-text'><a href='" + product.url + "' title='" + product.title_format + "'>" + product.title_format + "</a></li>
               </ul>
             </header>
           </article>"
@@ -191,12 +191,12 @@ module Zreview
             <p class='article-thumbnail'>
               <a href='" + product.url + "'>
 
-                <img src='" + product_img + "'  alt='" + product.title.capitalize + "' />
+                <img src='" + product_img + "'  alt='" + product.title_format + "' />
               </a>
             </p>
             <header>
               <p class='article-title'>
-                <a href='" + product.url + "'>" + product.title.capitalize + "</a>
+                <a href='" + product.url + "'>" + product.title_format + "</a>
               </p>
               <p class='article-summary'>" + product.description + "</p>
 
@@ -214,12 +214,12 @@ module Zreview
             <p class='article-thumbnail'>
               <a href='./" + product.url + "'>
 
-                <img src='" + product_img + "' alt='" + product.title.capitalize + "' />
+                <img src='" + product_img + "' alt='" + product.title_format + "' />
               </a>
             </p>
             <header>
               <p class='article-title'>
-                <a href='./" + product.url + "'>" + product.title.capitalize + "</a>
+                <a href='./" + product.url + "'>" + product.title_format + "</a>
               </p>
               <p class='article-summary'>" + product.description + "</p>
             </header>
@@ -237,12 +237,12 @@ module Zreview
             <p class='article-thumbnail'>
               <a href='./" + product.url + "'>
 
-                <img src='" + product_img + "' alt='" + product.title.capitalize + "' alt='" + product.title.capitalize + "' />
+                <img src='" + product_img + "' alt='" + product.title_format + "' alt='" + product.title_format + "' />
               </a>
             </p>
             <header>
               <p class='article-title'>
-                <a href='./" + product.url + "'>" + product.title.capitalize + "</a>
+                <a href='./" + product.url + "'>" + product.title_format + "</a>
               </p>
               <p class='article-summary'>" + product.description + "</p>
             </header>
@@ -263,12 +263,12 @@ module Zreview
             <p class='article-thumbnail'>
               <a href='./" + product.url + "'>
 
-                <img src='" + product_img + "' alt='" + product.title.capitalize + "' alt='" + product.title.capitalize + "' />
+                <img src='" + product_img + "' alt='" + product.title_format + "' alt='" + product.title_format + "' />
               </a>
             </p>
             <header>
               <p class='article-title'>
-                <a href='./" + product.url + "'>" + product.title.capitalize + "</a>
+                <a href='./" + product.url + "'>" + product.title_format + "</a>
               </p>
               <p class='article-summary'>" + product.description + "</p>
             </header>
@@ -286,12 +286,12 @@ module Zreview
             <p class='article-thumbnail'>
               <a href='./" + product.url + "'>
 
-                <img src='" + product_img + "' alt='" + product.title.capitalize + "' alt='" + product.title.capitalize + "' />
+                <img src='" + product_img + "' alt='" + product.title_format + "' alt='" + product.title_format + "' />
               </a>
             </p>
             <header>
               <p class='article-title'>
-                <a href='./" + product.url + "'>" + product.title.capitalize + "</a>
+                <a href='./" + product.url + "'>" + product.title_format + "</a>
               </p>
               <p class='article-summary'>" + product.description + "</p>
             </header>
@@ -309,12 +309,12 @@ module Zreview
             <p class='article-thumbnail'>
               <a href='./" + product.url + "'>
 
-                <img src='" + product_img + "' alt='" + product.title.capitalize + "' alt='" + product.title.capitalize + "' />
+                <img src='" + product_img + "' alt='" + product.title_format + "' alt='" + product.title_format + "' />
               </a>
             </p>
             <header>
               <p class='article-title'>
-                <a href='./" + product.url + "'>" + product.title.capitalize + "</a>
+                <a href='./" + product.url + "'>" + product.title_format + "</a>
               </p>
               <p class='article-summary'>" + product.description + "</p>
             </header>
@@ -332,12 +332,12 @@ module Zreview
             <p class='article-thumbnail'>
               <a href='./" + product.url + "'>
 
-                <img src='" + product_img + "' alt='" + product.title.capitalize + "' alt='" + product.title.capitalize + "' />
+                <img src='" + product_img + "' alt='" + product.title_format + "' alt='" + product.title_format + "' />
               </a>
             </p>
             <header>
               <p class='article-title'>
-                <a href='./" + product.url + "'>" + product.title.capitalize + "</a>
+                <a href='./" + product.url + "'>" + product.title_format + "</a>
               </p>
               <p class='article-summary'>" + product.description + "</p>
             </header>
@@ -364,17 +364,17 @@ module Zreview
         list_news_html += "<article zone-ad-name='' class='article-item znews-native type-text picked-featured'>
            <p class='article-thumbnail'>
               <a href='" + product.url + "'>
-                <img src='" + product_img + "'  alt='" + product.title.capitalize + "' />
+                <img src='" + product_img + "'  alt='" + product.title_format + "' />
               </a>
             </p>
             <header>
               <p class='article-title'>
-                <a href='" + product.url + "'>" + product.title.capitalize + "</a>
+                <a href='" + product.url + "'>" + product.title_format + "</a>
               </p>
               <p class='article-summary'>" + product.description + "</p>
 
               <ul class='article-related'>
-                <li class=' type-text'><a href='" + product.url + "' title='" + product.title.capitalize + "'>" + product.title.capitalize + "</a></li>
+                <li class=' type-text'><a href='" + product.url + "' title='" + product.title_format + "'>" + product.title_format + "</a></li>
               </ul>
             </header>
           </article>"
@@ -391,12 +391,12 @@ module Zreview
             <p class='article-thumbnail'>
               <a href='" + product.url + "'>
 
-                <img src='" + product_img + "'  alt='" + product.title.capitalize + "' />
+                <img src='" + product_img + "'  alt='" + product.title_format + "' />
               </a>
             </p>
             <header>
               <p class='article-title'>
-                <a href='" + product.url + "'>" + product.title.capitalize + "</a>
+                <a href='" + product.url + "'>" + product.title_format + "</a>
               </p>
               <p class='article-summary'>" + product.description + "</p>
 
@@ -415,12 +415,12 @@ module Zreview
             <p class='article-thumbnail'>
               <a href='./" + product.url + "'>
 
-                <img src='" + product_img + "' alt='" + product.title.capitalize + "' alt='" + product.title.capitalize + "' />
+                <img src='" + product_img + "' alt='" + product.title_format + "' alt='" + product.title_format + "' />
               </a>
             </p>
             <header>
               <p class='article-title'>
-                <a href='./" + product.url + "'>" + product.title.capitalize + "</a>
+                <a href='./" + product.url + "'>" + product.title_format + "</a>
               </p>
               <p class='article-summary'>" + product.description + "</p>
             </header>
