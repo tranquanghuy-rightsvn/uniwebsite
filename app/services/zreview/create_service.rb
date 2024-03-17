@@ -159,7 +159,7 @@ module Zreview
 
       list_news_html = ""
 
-      Product::Zreview.order(id: :desc).limit(3).map do |product|
+      Product::Zreview.hot_category.order(id: :desc).limit(3).map do |product|
         product_img= product.image.url.split("/")[-3..-1].join("/")
         list_news_html += "<article zone-ad-name='' class='article-item znews-native type-text picked-featured'>
            <p class='article-thumbnail'>
@@ -185,7 +185,7 @@ module Zreview
 
       list_news_html = ""
 
-      Product::Zreview.order(id: :desc).limit(5).offset(3).map do |product|
+      Product::Zreview.hot_category.order(id: :desc).limit(5).offset(3).map do |product|
         product_img= product.image.url.split("/")[-3..-1].join("/")
         list_news_html += "<article class='article-item type-text picked-trending short'>
             <p class='article-thumbnail'>
@@ -325,8 +325,8 @@ module Zreview
 
       list_news_6 = doc_list_news.at_css('#list-recommend')
       list_news_html = ""
-
-      Product::Zreview.order(id: :desc).limit(10).offset(8).map do |product|
+      hot_product_ids = Product::Zreview.hot_category.order(id: :desc).limit(8).ids
+      Product::Zreview.not_ids(hot_product_ids).order(id: :desc).limit(12).map do |product|
         product_img= product.image.url.split("/")[-3..-1].join("/")
         list_news_html += "<article class='article-item  type-text'>
             <p class='article-thumbnail'>

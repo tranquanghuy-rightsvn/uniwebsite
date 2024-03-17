@@ -15,6 +15,9 @@ class Product::Zreview  < Product
   scope :by_books, -> {joins(:category).where(category: {name: "Sách"})}
   scope :by_films, -> {joins(:category).where(category: {name: "Phim"})}
   scope :same_category, -> (product){where(category_id: product.category.id)}
+  scope :hot_category, -> {joins(:category).where(category: {name: ["Phim", "Nhân vật", "Du lịch", "Công nghệ", "Sách", "Ẩm thực", "Nhà hàng"]})}
+
+  scope :not_ids, -> (ids){where.not(id: ids)}
 
   def time_publish
     created_at.in_time_zone('Asia/Ho_Chi_Minh').strftime('%H:%M %d/%m/%Y')
