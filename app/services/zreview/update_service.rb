@@ -349,8 +349,85 @@ class Zreview::UpdateService
 
     File.write(root_news_path, doc_list_news.to_html)
 
-    # sửa category nếu thay đổi
-    # khỏi đi
+    # Sửa category
+    category_path = Rails.root.join('projects', 'zreview', category_direct_path)
+    category_doc = Nokogiri::HTML(File.read(category_path))
+    products_same_category = Product::Zreview.same_category(resource)
+
+    list_category_1 = category_doc.at_css('#category-list-1')
+
+    list_news_html = ""
+
+    products_same_category.order(id: :desc).limit(3).map do |product|
+      product_img= product.image.url.split("/")[-3..-1].join("/")
+      list_news_html += "<article zone-ad-name='' class='article-item znews-native type-text picked-featured'>
+        <p class='article-thumbnail'>
+          <a href='" + product.url + "'>
+            <img src='" + product_img + "'  alt='" + product.title_format + "' />
+          </a>
+        </p>
+        <header>
+          <p class='article-title'>
+            <a href='" + product.url + "'>" + product.title_format + "</a>
+          </p>
+          <p class='article-summary'>" + product.description + "</p>
+
+          <ul class='article-related'>
+            <li class=' type-text'><a href='" + product.url + "' title='" + product.title_format + "'>" + product.title_format + "</a></li>
+          </ul>
+        </header>
+      </article>"
+    end
+    list_category_1.inner_html = list_news_html
+
+    list_category_2 = category_doc.at_css('#category-list-2')
+
+    list_news_html = ""
+
+    products_same_category.order(id: :desc).limit(5).offset(3).map do |product|
+      product_img= product.image.url.split("/")[-3..-1].join("/")
+      list_news_html += "<article class='article-item type-text picked-trending short'>
+          <p class='article-thumbnail'>
+            <a href='" + product.url + "'>
+
+              <img src='" + product_img + "'  alt='" + product.title_format + "' />
+            </a>
+          </p>
+          <header>
+            <p class='article-title'>
+              <a href='" + product.url + "'>" + product.title_format + "</a>
+            </p>
+            <p class='article-summary'>" + product.description + "</p>
+
+          </header>
+        </article>"
+    end
+    list_category_2.inner_html = list_news_html
+
+    list_category_3 = category_doc.at_css('#category-list-3')
+
+    list_news_html = ""
+
+    products_same_category.order(id: :desc).limit(40).offset(8).map do |product|
+      product_img= product.image.url.split("/")[-3..-1].join("/")
+      list_news_html += "<article class='article-item  type-text'>
+          <p class='article-thumbnail'>
+            <a href='./" + product.url + "'>
+
+              <img src='" + product_img + "' alt='" + product.title_format + "' alt='" + product.title_format + "' />
+            </a>
+          </p>
+          <header>
+            <p class='article-title'>
+              <a href='./" + product.url + "'>" + product.title_format + "</a>
+            </p>
+            <p class='article-summary'>" + product.description + "</p>
+          </header>
+        </article>"
+    end
+    list_category_3.inner_html = list_news_html
+
+    File.write(category_path, category_doc.to_html)
 
     zreview_path = Rails.root.join('projects', 'zreview')
     system('cd ' + zreview_path.to_s + ' && git add . && git commit -m "New commit" && git push origin master -f')
