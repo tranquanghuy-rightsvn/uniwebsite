@@ -28,7 +28,7 @@
     <% if @model.validators_on(:category_id).any? { |v| v.is_a?(ActiveRecord::Validations::PresenceValidator) } %>
       <div class="form-group">
         <%= form.label :category %>
-        <%= form.select(:category_id, options_for_select(Category.generate_options(params[:website_id])), {}, class: "form-control") %>
+        <%= form.select(:category_id, options_for_select(Category.generate_options(params[:website_id]), @product.category_id), {}, class: "form-control") %>
       </div>
     <% end %>
 
