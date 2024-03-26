@@ -25,7 +25,7 @@
       <%= form.text_field :description, class: "form-control" %>
     </div>
 
-    <% if @model.validators_on(:category).any? { |v| v.is_a?(ActiveRecord::Validations::PresenceValidator) } %>
+    <% if @model.validators_on(:category_id).any? { |v| v.is_a?(ActiveRecord::Validations::PresenceValidator) } %>
       <div class="form-group">
         <%= form.label :category %>
         <%= form.select(:category_id, options_for_select(Category.generate_options(params[:website_id])), {}, class: "form-control") %>
