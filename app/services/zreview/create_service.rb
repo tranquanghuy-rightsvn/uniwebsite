@@ -50,14 +50,18 @@ module Zreview
         </script>
         <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
         <meta http-equiv='REFRESH' content='1800' />
+        <meta http-equiv='Content-Language' content='vi'>
+        <meta name='copyright' content='Copyright © 2024 by Zreview.vn'>
+        <meta name='distribution' content='Global'>
+        <meta name='author' content='Zreview.vn'>
 
         <title>" + resource.title_format + "</title>
         <meta name='description' content='" + resource.description.gsub('"', "") + "' />
+        <meta name='abstract' content='" + resource.description.gsub('"', "") + "' />
         <meta name='keywords' content='" + JSON.parse(resource.keywords).join(",") + "' />
 
         <!-- ROBOTS -->
-        <meta name='googlebot' content='noarchive' />
-        <meta name='robots' content='noarchive,index,follow' />
+        <meta name='robots' content='index,follow' />
 
         <!-- FACEBOOK OPEN GRAPH -->
         <meta property='fb:app_id' content='571421367282732' />
