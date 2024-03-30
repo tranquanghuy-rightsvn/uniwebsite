@@ -129,7 +129,7 @@ class Zreview::UpdateService
 
     news_reference = doc_root_post.at_css('#news-reference')
     list_news_html = ""
-    Product::Zreview.same_category(resource).order(id: :desc).limit(6).offset(1).map do |product|
+    Product::Zreview.same_category(resource).where.not(id: resource.id).order(id: :desc).limit(6).map do |product|
       product_img= product.image.url.split("/")[-3..-1].join("/")
       list_news_html += "<article zone-ad-name='' class='article-item znews-native type-text picked-featured'>
          <p class='article-thumbnail'>
