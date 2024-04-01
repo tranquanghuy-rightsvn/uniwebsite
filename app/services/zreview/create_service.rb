@@ -473,7 +473,6 @@ module Zreview
           <link rel=\"alternate\" type=\"text/html\" href=\"https://zreview.vn/" + product.url + "\"/>
           <link rel=\"enclosure\" type=\"image/jpg\" href=\"" + product_img + "\"/>
           <summary type=\"html\"><p>" + product.description + "</p></summary>
-          <media:thumbnail url=\"" + product_img + "\" width=\"500\" height=\"333\"/>
         </entry>"
       end
 
