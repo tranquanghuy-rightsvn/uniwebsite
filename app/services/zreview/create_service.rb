@@ -448,6 +448,38 @@ module Zreview
 
       File.write(sitemap_xml_path, doc_sitemap_xml)
 
+      # sửa atom.xml
+
+      atom_xml_path =  Rails.root.join('projects', 'zreview', 'atom.xml')
+      doc_atom_xml = Nokogiri::XML(File.read(atom_xml_path))
+      div_atom_xml = doc_atom_xml.at_css('feed')
+      atom_xml = "<title>Zreview - Review cả thế giới</title>
+                <id>https://zreview.vn/</id>
+                  <updated>" + Product::Zreview.last.created_at.in_time_zone("Asia/Ho_Chi_Minh").iso8601 + "</updated>
+                <link href=\"https://zreview.vn/\"/>
+                <link rel=\"self\" href=\"https://zreview.vn/atom.xml\"/>
+                <author>
+                <name>Zreview</name>
+                </author>
+                <icon>https://zreview.vn/images/favicon/favicon_48x48.ico</icon>
+                <logo>https://zreview.vn/images/logo.svg</logo>"
+
+      Product::Zreview.order(id: :desc).limit(20).map do |product|
+        product_img= "https://zreview.vn/" + product.image.url.split("/")[-3..-1].join("/")
+        atom_xml += "<entry>
+          <id>https://zreview.vn/" + product.url + "</id>" +
+          "<title>" + product.title + "</title>
+          <updated>" + product.created_at.in_time_zone("Asia/Ho_Chi_Minh").iso8601 + "</updated>
+          <link rel=\"alternate\" type=\"text/html\" href=\"https://zreview.vn/" + product.url + "\"/>
+          <link rel=\"enclosure\" type=\"image/jpg\" href=\"" + product_img + "\"/>
+          <summary type=\"html\"><p>" + product.description + "</p></summary>
+          <media:thumbnail url=\"" + product_img + "\" width=\"500\" height=\"333\"/>
+        </entry>"
+      end
+
+      div_atom_xml.inner_html = atom_xml
+      File.write(atom_xml_path, doc_atom_xml)
+
       zreview_path = Rails.root.join('projects', 'zreview')
       system('cd ' + zreview_path.to_s + ' && git add . && git commit -m "New commit" && git push origin master -f')
     end
