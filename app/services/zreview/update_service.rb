@@ -447,7 +447,7 @@ class Zreview::UpdateService
               <icon>https://zreview.vn/images/favicon/favicon_48x48.ico</icon>
               <logo>https://zreview.vn/images/logo.svg</logo>"
 
-    Product::Zreview.order(id: :desc).limit(20).map do |product|
+    Product::Zreview.order(id: :desc).map do |product|
       product_img= "https://zreview.vn/" + product.image.url.split("/")[-3..-1].join("/")
       atom_xml += "<entry>
         <id>https://zreview.vn/" + product.url + "</id>" +
